@@ -1,0 +1,674 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language polish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Omówić pojęcie informatyki i jej działy.
+ 
+\end_layout
+
+\begin_layout Standard
+Informatyka – dyscyplina nauki zaliczana do nauk ścisłych oraz techniki
+ zajmująca się przetwarzaniem informacji, w tym również technologiami przetwarza
+nia informacji oraz technologiami wytwarzania systemów przetwarzających
+ informację.
+ Początkowo stanowiła część matematyki, później rozwinęła się do odrębnej
+ dyscypliny – pozostaje jednak nadal w ścisłej relacji z matematyką, która
+ dostarcza informatyce podstaw teoretycznych.
+ 
+\end_layout
+
+\begin_layout Standard
+Bardziej znane i popularne działy informatyki to przede wszystkim:
+\end_layout
+
+\begin_layout Itemize
+administracja sieciowa – zarządzanie siecią komputerową;
+\end_layout
+
+\begin_layout Itemize
+administracja systemem – zarządzanie systemem informatycznym;
+\end_layout
+
+\begin_layout Itemize
+algorytmika – tworzenie i analizowanie algorytmów.
+ Podstawowa, najstarsza dyscyplina informatyki;
+\end_layout
+
+\begin_layout Itemize
+architektura procesorów – projektowanie procesorów, bez których nie byłoby
+ komputerów;
+\end_layout
+
+\begin_layout Itemize
+bezpieczeństwo komputerowe – dyscyplina łącząca informatykę z telekomunikacją
+ w celu zapewnienia poufności i bezpieczeństwa danych;
+\end_layout
+
+\begin_layout Itemize
+grafika komputerowa – wykorzystuje technikę komputerową w celu wizualizacji
+ rzeczywistości;
+\end_layout
+
+\begin_layout Itemize
+inżynieria oprogramowania – produkcja oprogramowania;
+\end_layout
+
+\begin_layout Itemize
+języki programowania – tworzenie języków programowania.
+ Wyróżniająca się, podstawowa dyscyplina informatyki;
+\end_layout
+
+\begin_layout Itemize
+programowanie – czyli tworzenie kodu źródłowego programów komputerowych.
+ Najpopularniejsza dyscyplina informatyki;
+\end_layout
+
+\begin_layout Itemize
+sprzęt komputerowy – komputery i ich urządzenia peryferyjne;
+\end_layout
+
+\begin_layout Itemize
+symulacja komputerowa – komputerowa symulacja z wykorzystaniem modelowania
+ matematycznego;
+\end_layout
+
+\begin_layout Itemize
+systemy informatyczne – tworzenie systemów informatycznych w celach użytkowych;
+\end_layout
+
+\begin_layout Itemize
+sztuczna inteligencja – komputerowe symulowanie inteligencji;
+\end_layout
+
+\begin_layout Itemize
+teoria informacji – dyscyplina zajmująca się problematyką informacji, w
+ tym teorią przetwarzania i przesyłania informacji;
+\end_layout
+
+\begin_layout Itemize
+webmastering – projektowanie, programowanie i publikacja serwisów internetowych.
+\end_layout
+
+\begin_layout Section
+Przedstawić cechy programowania strukturalnego.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować paradygmat programowania obiektowego.
+\end_layout
+
+\begin_layout Section*
+Abstrakcja
+\end_layout
+
+\begin_layout Standard
+Każdy obiekt w systemie służy jako model abstrakcyjnego "wykonawcy", który
+ może wykonywać pracę, opisywać i zmieniać swój stan oraz komunikować się
+ z innymi obiektami w systemie bez ujawniania, w jaki sposób zaimplementowano
+ dane cechy.
+ Procesy, funkcje lub metody mogą być również abstrahowane, a kiedy tak
+ się dzieje, konieczne są rozmaite techniki rozszerzania abstrakcji.
+\end_layout
+
+\begin_layout Section*
+Hermetyzacja
+\end_layout
+
+\begin_layout Standard
+Czyli ukrywanie implementacji, enkapsulacja.
+ Zapewnia, że obiekt nie może zmieniać stanu wewnętrznego innych obiektów
+ w nieoczekiwany sposób.
+ Tylko własne metody obiektu są uprawnione do zmiany jego stanu.
+ Każdy typ obiektu prezentuje innym obiektom swój interfejs, który określa
+ dopuszczalne metody współpracy.
+ Pewne języki osłabiają to założenie, dopuszczając pewien poziom bezpośredniego
+ (kontrolowanego) dostępu do "wnętrzności" obiektu.
+ Ograniczają w ten sposób poziom abstrakcji.
+ Przykładowo w niektórych kompilatorach języka C++ istnieje możliwość tymczasowe
+go wyłączenia mechanizmu enkapsulacji; otwiera to dostęp do wszystkich pól
+ i metod prywatnych, ułatwiając programistom pracę nad pośrednimi etapami
+ tworzenia kodu i znajdowaniem błędów.
+\end_layout
+
+\begin_layout Section*
+Polimorfizm
+\end_layout
+
+\begin_layout Standard
+Referencje i kolekcje obiektów mogą dotyczyć obiektów różnego typu, a wywołanie
+ metody dla referencji spowoduje zachowanie odpowiednie dla pełnego typu
+ obiektu wywoływanego.
+ Jeśli dzieje się to w czasie działania programu, to nazywa się to późnym
+ wiązaniem lub wiązaniem dynamicznym.
+ Niektóre języki udostępniają bardziej statyczne (w trakcie kompilacji)
+ rozwiązania polimorfizmu – na przykład szablony i przeciążanie operatorów
+ w C++.
+\end_layout
+
+\begin_layout Section*
+Dziedziczenie
+\end_layout
+
+\begin_layout Standard
+Porządkuje i wspomaga polimorfizm i enkapsulację dzięki umożliwieniu definiowani
+a i tworzenia specjalizowanych obiektów na podstawie bardziej ogólnych.
+ Dla obiektów specjalizowanych nie trzeba redefiniować całej funkcjonalności,
+ lecz tylko tę, której nie ma obiekt ogólniejszy.
+ W typowym przypadku powstają grupy obiektów zwane klasami, oraz grupy klas
+ zwane drzewami.
+ Odzwierciedlają one wspólne cechy obiektów.
+\end_layout
+
+\begin_layout Section
+Omówić elementy klasy w programie.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować cechy algorytmów, w tym złożoność obliczeniową.
+\end_layout
+
+\begin_layout Standard
+Algorytm – w matematyce oraz informatyce to skończony, uporządkowany ciąg
+ jasno zdefiniowanych czynności, koniecznych do wykonania pewnego zadania.
+ 
+\end_layout
+
+\begin_layout Section*
+Cechy algorytmów
+\end_layout
+
+\begin_layout Itemize
+poprawność --- algorytm daje dobre wyniki,
+\end_layout
+
+\begin_layout Itemize
+jednoznaczność --- daje takie same wyniki przy takich samych danych,
+\end_layout
+
+\begin_layout Itemize
+skończoność --- wykonuje się w skończonej ilości kroków,
+\end_layout
+
+\begin_layout Itemize
+sprawność --- czasowa; szybkość działania i pamięciowa; "zasobożerność"
+\end_layout
+
+\begin_layout Section*
+Złożoność obliczeniowa
+\end_layout
+
+\begin_layout Standard
+Ilość zasobów niezbędnych do wykonania algorytmu można rozumieć jako jego
+ złożoność.
+ W zależności od rozważanego zasobu mówimy o złożoności czasowej czy też
+ pamięciowej.
+ 
+\end_layout
+
+\begin_layout Standard
+Oczywiście w większości wypadków ilość potrzebnych zasobów będzie się różnić
+ w zależności od danych wejściowych z zakresu danego zagadnienia.
+ Złożoność algorytmu jest funkcją rozmiaru danych wejściowych.
+ 
+\end_layout
+
+\begin_layout Standard
+Kolejnym problemem jest fakt, iż złożoność zwykle nie zależy wyłącznie od
+ rozmiaru danych, ale może się znacznie różnić dla danych wejściowych o
+ identycznym rozmiarze.
+ Dwoma często stosowanymi sposobami podejścia są: rozpatrywanie przypadków
+ najgorszych (złożoność pesymistyczna) oraz zastosowanie określonego sposobu
+ uśrednienia wszystkich możliwych przypadków (złożoność oczekiwana).
+\end_layout
+
+\begin_layout Subsection*
+Klasa złożoności
+\end_layout
+
+\begin_layout Standard
+W teorii obliczeń klasa złożoności to zbiór problemów obliczeniowych o podobnej
+ złożoności obliczeniowej.
+\end_layout
+
+\begin_layout Standard
+Na przykład klasa P to zbiór problemów decyzyjnych, które można rozwiązać
+ na maszynie Turinga w czasie wielomianowym, natomiast klasa NP to zbiór
+ problemów decyzyjnych, które można rozwiązać na niedeterministycznej maszynie
+ Turinga w czasie wielomianowym.
+ 
+\end_layout
+
+\begin_layout Section
+Wyjaśnić pojęcie algorytmu i dokonać klasyfikacji algorytmów wg wybranych
+ kryteriów.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować język programowania i podać wybrane klasyfikacje języków
+\end_layout
+
+\begin_layout Section*
+Język programowania
+\end_layout
+
+\begin_layout Standard
+Podobnie jak języki naturalne, język programowania składa się ze zbiorów
+ reguł syntaktycznych oraz semantyki, które opisują, jak należy budować
+ poprawne wyrażenia oraz jak komputer ma je rozumieć.
+ Język programowania pozwala na precyzyjny zapis algorytmów oraz innych
+ zadań, jakie komputer ma wykonać.
+\end_layout
+
+\begin_layout Section*
+Klasyfikacja pod względem wykorzystanych paradygmatów
+\end_layout
+
+\begin_layout Itemize
+Programowanie proceduralne --- zaleca dzielenie kodu na procedury, czyli
+ fragmenty wykonujące ściśle określone operacje,
+\end_layout
+
+\begin_layout Itemize
+Programowanie strukturalne --- zaleca hierarchiczne dzielenie kodu na bloki,
+ z jednym punktem wejścia i jednym lub wieloma punktami wyjścia.
+ Chodzi przede wszystkim o nieużywanie (lub ograniczenie) instrukcji skoku
+ (goto),
+\end_layout
+
+\begin_layout Itemize
+Programowanie funkcyjne --- funkcje należą do wartości podstawowych, a nacisk
+ kładzie się na wartościowanie (często rekurencyjnych) funkcji, a nie na
+ wykonywanie poleceń,
+\end_layout
+
+\begin_layout Itemize
+Programowanie imperatywne --- opisuje proces wykonywania jako sekwencję
+ instrukcji zmieniających stan programu; programy imperatywne składają się
+ z ciągu komend do wykonania przez komputer,
+\end_layout
+
+\begin_layout Itemize
+Programowanie obiektowe --- programy definiuje się za pomocą obiektów ---
+ elementów łączących stan (czyli dane, nazywane najczęściej polami) i zachowanie
+ (czyli procedury, tu: metody); obiektowy program komputerowy wyrażony jest
+ jako zbiór takich obiektów, komunikujących się pomiędzy sobą w celu wykonywania
+ zadań,
+\end_layout
+
+\begin_layout Itemize
+Programowanie uogólnione (generyczne np.
+ C++, Scala) --- pozwala na pisanie kodu programu bez wcześniejszej znajomości
+ typów danych, na których kod ten będzie pracował,
+\end_layout
+
+\begin_layout Itemize
+Programowanie zdarzeniowe --- program jest cały czas bombardowany zdarzeniami
+ (events), na które musi odpowiedzieć; przepływ sterowania w programie jest
+ całkowicie niemożliwy do przewidzenia z góry
+\end_layout
+
+\begin_layout Itemize
+Programowanie logiczne (np.
+ Prolog) --- odmiana programowania deklaratywnego, w której program podawany
+ jest jako pewien zestaw zależności, a obliczenia są dowodem pewnego twierdzenia
+ w oparciu o te zależności,
+\end_layout
+
+\begin_layout Itemize
+Programowanie aspektowe (np.
+ AspectJ) --- wspomaga separację zagadnień i rozdzielenie programu na części
+ w jak największym stopniu niezwiązane funkcjonalnie; oddziela fizycznie
+ kod każdego zagadnienia poprzez umieszczenie ich w oddzielnych aspektach
+ i logiczne zdefiniowanie punktów interakcji pomiędzy nimi,
+\end_layout
+
+\begin_layout Itemize
+Programowanie deklaratywne --- w przeciwieństwie do programów napisanych
+ imperatywnie, programista opisuje warunki, jakie musi spełniać końcowe
+ rozwiązanie (co chcemy osiągnąć), a nie szczegółową sekwencję kroków, które
+ do niego prowadzą (jak to zrobić),
+\end_layout
+
+\begin_layout Itemize
+Programowanie agentowe --- wyższy od abstrakcji programowania obiektowego;
+ polega on na tworzeniu agentów, które muszą być przygotowane na otrzymanie
+ błędnych danych od innego agenta, lub nieotrzymanie ich w ogóle, 
+\end_layout
+
+\begin_layout Itemize
+Programowanie modularne --- zaleca stosowanie nadrzędności modułów w stosunku
+ do procedur i bloków tworzących program; moduł grupuje funkcjonalnie związane
+ ze sobą dane oraz procedury i jest reprezentacją obiektu jednokrotnie występują
+cego w programie
+\end_layout
+
+\begin_layout Section
+Porównać język Java oraz C++.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować wybrane środowisko programistyczne języka C++.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować wybrane środowisko programistyczne języka Java.
+ 
+\end_layout
+
+\begin_layout Section
+Omówić dwa wybrane algorytmy sortowania.
+ 
+\end_layout
+
+\begin_layout Section
+Wyjaśnić zasady działania instrukcji warunkowej i instrukcji pętli w wybranym
+ języku programowania.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować wybrany język skryptowy.
+ 
+\end_layout
+
+\begin_layout Section
+Omówić system stron WWW.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować zasady instalacji i administrowania serwerami internetowymi.
+ 
+\end_layout
+
+\begin_layout Section
+Porównać systemy operacyjne klasy Windows i Unix.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować modele cyklu „życia” systemu informatycznego.
+ 
+\end_layout
+
+\begin_layout Section
+Omówić etapy tworzenia systemu informatycznego.
+ 
+\end_layout
+
+\begin_layout Section
+Wyjaśnij pojęcia: baza danych, system zarządzania bazami danych oraz integralnoś
+ć danych.
+ 
+\end_layout
+
+\begin_layout Section
+Język baz danych SQL.
+ 
+\end_layout
+
+\begin_layout Section
+Instrukcje definiujące dane w SQL.
+\end_layout
+
+\begin_layout Section
+Zapytania wybierające SQL.
+ 
+\end_layout
+
+\begin_layout Section
+Relacyjne bazy danych.
+ 
+\end_layout
+
+\begin_layout Section
+Diagram związków encji.
+ 
+\end_layout
+
+\begin_layout Section
+Normalizacja baz danych.
+ 
+\end_layout
+
+\begin_layout Section
+Narzędzia typu CASE.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować wielowarstwowy model sieci komputerowej.
+ 
+\end_layout
+
+\begin_layout Section
+Przedstawić klasyfikację sieci komputerowych.
+ 
+\end_layout
+
+\begin_layout Section
+Omówić podstawowe narzędzia administratora sieci komputerowej.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować politykę bezpieczeństwa w systemach komputerowych.
+ 
+\end_layout
+
+\begin_layout Section
+Wyjaśnij terminy: identyfikacja, uwierzytelnienie, autoryzacja, spójność
+ danych, ślad kontroli.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować komponenty zintegrowanych programów bezpieczeństwa w systemach
+ komputerowych.
+ 
+\end_layout
+
+\begin_layout Section
+Podstawowe modele kontroli dostępu do systemów operacyjnych i baz danych.
+ 
+\end_layout
+
+\begin_layout Section
+Porównanie kryptografii symetrycznej i asymetrycznej.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować podpis elektroniczny.
+ 
+\end_layout
+
+\begin_layout Section
+Charakterystyka protokołów uwierzytelniania.
+ 
+\end_layout
+
+\begin_layout Section
+Omówić cechy systemów rozproszonych.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować przykładowe architektury systemów rozproszonych.
+ 
+\end_layout
+
+\begin_layout Section
+Porównać technologie CORBA i JAVA RMI.
+ 
+\end_layout
+
+\begin_layout Section
+Omówić usługi nazewnicze i role rejestrów w systemach rozproszonych.
+\end_layout
+
+\begin_layout Section
+Sklasyfikować i omówić języki programowania serwisów Internetowych.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować język PHP.
+ 
+\end_layout
+
+\begin_layout Section
+Wymienić i krótko omówić instrukcje sterujące w PHP.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować język JavaScript.
+ 
+\end_layout
+
+\begin_layout Section
+Omówić kolejne kroki obsługi technologii AJAX z wykorzystaniem PHP.
+ 
+\end_layout
+
+\begin_layout Section
+Wymienić i opisać funkcje i operatory stosowane w SQL/XML.
+ 
+\end_layout
+
+\begin_layout Section
+Podać i omówić przykład schematu XML w DTD.
+ 
+\end_layout
+
+\begin_layout Section
+Podać i omówić przykład schematu XML w XML Schema.
+ 
+\end_layout
+
+\begin_layout Section
+Omówić możliwość przetwarzania dokumentów XML w XQuery.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować obsługę baz danych w PHP.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować obsługę baz danych w Javie.
+ 
+\end_layout
+
+\begin_layout Section
+Omówić metody zabezpieczania internetowych baz danych.
+ 
+\end_layout
+
+\begin_layout Section
+Scharakteryzować modele danych multimedialnych w systemach internetowych.
+\end_layout
+
+\begin_layout Section
+Wymienić i omówić kolejne kroki wytwarzania witryn internetowych.
+\end_layout
+
+\begin_layout Section
+Omówić rolę administratora systemu informatycznego.
+\end_layout
+
+\begin_layout Section
+Charakterystyka infrastruktur klucza publicznego PKI.
+\end_layout
+
+\begin_layout Section
+Protokół SSL/TSL i jego zastosowania.
+\end_layout
+
+\begin_layout Section
+Aktorzy i przebieg ataków typu DDoS.
+\end_layout
+
+\begin_layout Section
+Bezpieczeństwo transakcji elektronicznych i protokół SET.
+\end_layout
+
+\begin_layout Section
+Na czym polega bezpieczeństwo usługi znakowania czasem? 
+\end_layout
+
+\end_body
+\end_document
