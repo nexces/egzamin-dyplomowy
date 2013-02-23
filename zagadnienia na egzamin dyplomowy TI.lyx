@@ -421,6 +421,10 @@ Scharakteryzować wybrane środowisko programistyczne języka C++.
  
 \end_layout
 
+\begin_layout Standard
+WTF?
+\end_layout
+
 \begin_layout Section
 Scharakteryzować wybrane środowisko programistyczne języka Java.
  
@@ -428,6 +432,43 @@ Scharakteryzować wybrane środowisko programistyczne języka Java.
 
 \begin_layout Section
 Omówić dwa wybrane algorytmy sortowania.
+ 
+\end_layout
+
+\begin_layout Section*
+Sortowanie przez scalanie
+\end_layout
+
+\begin_layout Standard
+Wyróżnić można trzy podstawowe kroki:
+\end_layout
+
+\begin_layout Enumerate
+Podziel zestaw danych na dwie równe części
+\end_layout
+
+\begin_layout Enumerate
+Zastosuj sortowanie przez scalanie dla każdej z nich oddzielnie, chyba że
+ pozostał już tylko jeden element;
+\end_layout
+
+\begin_layout Enumerate
+Połącz posortowane podciągi w jeden.
+\end_layout
+
+\begin_layout Standard
+Dobra implementacja w C jest tylko 20% wolniejsza od quicksort.
+\end_layout
+
+\begin_layout Section*
+Sortowanie bąbelkowe
+\end_layout
+
+\begin_layout Standard
+Polega na porównywaniu dwóch kolejnych elementów i zamianie ich kolejności,
+ jeżeli zaburza ona porządek, w jakim się sortuje tablicę.
+ Sortowanie kończy się, gdy podczas kolejnego przejścia nie dokonano żadnej
+ zmiany.
  
 \end_layout
 
@@ -439,7 +480,233 @@ Wyjaśnić zasady działania instrukcji warunkowej i instrukcji pętli w wybrany
 
 \begin_layout Section
 Scharakteryzować wybrany język skryptowy.
+\end_layout
+
+\begin_layout Section*
+Ruby
+\end_layout
+
+\begin_layout Standard
+Ruby to nowoczesny i dojrzały język programowania.
+ Zapożycza wiele elementów z języków programowania takich jak Perl, Smalltalk,
+ Eiffel, Ada czy Lisp.
+ Łączy w sobie programowanie obiektowe, funkcjonalne oraz imperatywne.
+\end_layout
+
+\begin_layout Standard
+Został opracowany przez Yukihiro “matz” Matsumoto jako narzędzie dla administrat
+orów systemów uniksowych, które miało zastąpić język Perl.
+ Jednak dzięki powstaniu frameworku do tworzenia aplikacji internetowych
+ Ruby on Rails (RoR) Ruby ogromnie zyskał na popularności.
+\end_layout
+
+\begin_layout Section*
+Cechy szczególne języka Ruby
+\end_layout
+
+\begin_layout Standard
+Oto kilka charakterystycznych cech języka Ruby, dzięki którym jest on wygodnym
+ i potężnym narzędziem:
+\end_layout
+
+\begin_layout Subsection*
+Bloki i lambdy
+\end_layout
+
+\begin_layout Standard
+Bloki i lambdy umożliwiające tak zwane domknięcia pozwalają na zamykanie
+ bloku kodu oraz zmiennych z otaczającego kontekstu i przekazywanie ich
+ innym obiektom.
+ Są to bardzo wygodne i łatwe w użyciu narzędzia do tworzenia wywołań zwrotnych,
+ filtrów, bloków iteracji a nawet elementów własnego języka domenowego 
+\lang american
+(Domain-specific Language
+\lang polish
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://en.wikipedia.org/wiki/Domain-specific_language
+\end_layout
+
+\end_inset
+
+ --- DSL).
+ W odróżnieniu od anonimowych funkcji czy klas znanych z innych języków,
+ dedykowana składnia i możliwość odwoływania się do zmiennych z otaczającego
+ kontekstu umożliwia pisanie w sposób funkcjonalny, niemal w tak elastyczny
+ sposób jak w języku Lisp.
  
+\end_layout
+
+\begin_layout Subsection*
+"Duck typing"
+\end_layout
+
+\begin_layout Standard
+Ruby nie wymaga od programisty deklarowania typów zmiennych.
+ Dzięki temu programista może skupić się na logice programu nie martwiąc
+ się o interfejsy, typy, deklaracje i inne elementy kodu potrzebne w statycznie
+ typowanych językach programowania.
+ W Ruby 
+\begin_inset Quotes eld
+\end_inset
+
+jak coś kwacze jak kaczka to jest kaczką
+\begin_inset Quotes erd
+\end_inset
+
+ co oznacza, że wystarczy żeby przekazany obiekt miał potrzebne metody aby
+ mógł być wykorzystany w danej roli.
+\end_layout
+
+\begin_layout Standard
+Wadą takiego rozwiązania jest to, że kompilator nie prowadzi programisty
+ za rękę.
+ Powoduje to, że programy Ruby wymagają intensywnego automatycznego testowania,
+ a zespoły pracujące przy pojedynczym module lub programie nie mogą być
+ zbyt duże.
+ Osobiście uważam, że w rezultacie uzyskujemy dobrze przetestowany i modułowy
+ kod.
+\end_layout
+
+\begin_layout Subsection*
+Automatyczne odśmiecanie pamięci
+\end_layout
+
+\begin_layout Standard
+W Ruby programista nie musi się martwić alokacją i zwalnianiem pamięci.
+ Implementacje Ruby wykorzystują nowoczesne implementacje 
+\lang american
+Garbage Collector
+\lang polish
+ (GC)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://en.wikipedia.org/wiki/Garbage_collection_(computer_science)
+\end_layout
+
+\end_inset
+
+ takie jak Mark-and-Seweep.
+\end_layout
+
+\begin_layout Subsection*
+Wszystko jest obiektem
+\end_layout
+
+\begin_layout Standard
+Ruby jest językiem w pełni obiektowym.
+ Każdy element tego języka reprezentowany jest przez obiekt.
+ W wielu językach, liczby i inne typy podstawowe nie są obiektami.
+ Ruby podąża za Smalltalkiem udostępniając metody i zmienne instancji wszystkim
+ swoim typom.
+ To ułatwia korzystanie z języka, ponieważ reguły mające zastosowanie do
+ obiektów odnoszą się również do całego języka.
+\end_layout
+
+\begin_layout Subsection*
+Wszystkie wyrażenia zwracają wartość
+\end_layout
+
+\begin_layout Standard
+W Ruby każde wyrażenie --- nawet takie jak wyrażenia warunkowe --- zwraca
+ wartość.
+ W wyniku czego programy napisane w Ruby są bardziej ekspresyjne i treściwe.
+\end_layout
+
+\begin_layout Subsection*
+Prawda w Ruby
+\end_layout
+
+\begin_layout Standard
+Wszystko co nie jest wartością 
+\emph on
+\lang american
+nil
+\emph default
+\lang polish
+ lub 
+\emph on
+\lang american
+false
+\emph default
+\lang polish
+ jest prawdą.
+ Ta prosta zasada powoduje że pisanie wyrażeń warunkowych staje się proste
+ i bardzo intuicyjne.
+\end_layout
+
+\begin_layout Subsection*
+Wyrażenia logiczne zapożyczone z języka Lisp
+\end_layout
+
+\begin_layout Standard
+Tak jak w języku Lisp argumenty wyrażeń 
+\emph on
+or
+\emph default
+ czy 
+\emph on
+and
+\emph default
+ są ewaluowane tylko gdy jest to konieczne do ustalenia wartości logicznej
+ danego wyrażenia.
+ W następstwie tego za pomocą operatorów logicznych można pisać proste wyrażenia
+ warunkowe.
+\end_layout
+
+\begin_layout Subsection*
+Mixin-y
+\end_layout
+
+\begin_layout Standard
+W Ruby niemożliwe jest wielokrotne dziedziczenie.
+ Jest tak ze względu na to, że wielokrotne dziedziczenie bardzo komplikuje
+ język programowania (dobrym przykładem jest język C++).
+ W zamian Ruby oferuje dużo prostszy i wygodniejszy mechanizm zwany 
+\emph on
+mixin
+\emph default
+.
+ Polega to na tym, że do klas bądź pojedynczych obiektów można dołączyć
+ wcześniej zdefiniowany zestaw metod.
+ Umożliwia to rozszerzanie dowolnych klas i obiektów o zestaw nowych zachowań.
+\end_layout
+
+\begin_layout Subsection*
+
+\lang american
+Meta programing
+\end_layout
+
+\begin_layout Standard
+Ruby umożliwia definiowanie klas, obiektów i metod z poziomu samego języka.
+ Daje to możliwość programowi na dostosowanie interfejsu klasy na przykład
+ do zestawu kolumn obecnych w tabeli bazy danych z którą się komunikuje.
+ Ta możliwość jest kluczem do sukcesu 
+\lang american
+Ruby on Rails
+\lang polish
+.
+ Umożliwia wyeliminowanie potrzeby konfiguracji różnych aspektów programów
+ wdrażając mantrę 
+\begin_inset Quotes eld
+\end_inset
+
+konwencja ponad konfiguracją
+\begin_inset Quotes erd
+\end_inset
+
+ (ang.
+ 
+\lang american
+convention over configuration
+\lang polish
+).
 \end_layout
 
 \begin_layout Section
@@ -452,13 +719,248 @@ Scharakteryzować zasady instalacji i administrowania serwerami internetowymi.
  
 \end_layout
 
+\begin_layout Standard
+WTF?
+\end_layout
+
 \begin_layout Section
 Porównać systemy operacyjne klasy Windows i Unix.
  
 \end_layout
 
 \begin_layout Section
-Scharakteryzować modele cyklu „życia” systemu informatycznego.
+Scharakteryzować modele cyklu „życia” systemu informatycznego 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://docs8.chomikuj.pl/196923976,PL,0,0,Cykl-zycia-systemu-informatycznego.doc
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Życie systemu – uporządkowany szereg prac (wzajemnie spójnych etapów) wykonanych
+ przy tworzeniu systemu informatycznego.
+ Poprzez analogię do życia ludzkiego wyróżnić możemy trzy podstawowe fazy:
+\end_layout
+
+\begin_layout Enumerate
+Faza narodzin – moment uświadamiania sobie (zgłoszenia) potrzeby istnienia
+ systemu; początek fazy wzrostu
+\end_layout
+
+\begin_layout Enumerate
+Faza wzrostu (eksploatacji) – kolejne działania pozwalające na pełne i skuteczne
+ stworzenie, a następnie użytkowanie systemu
+\end_layout
+
+\begin_layout Enumerate
+Faza śmierci – moment zaprzestania eksploatacji systemu.
+\end_layout
+
+\begin_layout Standard
+W cyklu życia systemu informatycznego najczęściej jednak wyodrębnia się
+ następujące fazy:
+\end_layout
+
+\begin_layout Enumerate
+Analiza wymagań
+\end_layout
+
+\begin_layout Enumerate
+Projekt
+\end_layout
+
+\begin_layout Enumerate
+Implementacja (kodowanie)
+\end_layout
+
+\begin_layout Enumerate
+Testowanie
+\end_layout
+
+\begin_layout Enumerate
+Instalacja
+\end_layout
+
+\begin_layout Enumerate
+Eksploatacja
+\end_layout
+
+\begin_layout Enumerate
+Wycofanie
+\end_layout
+
+\begin_layout Section*
+Model kaskadowy
+\end_layout
+
+\begin_layout Enumerate
+Analiza potrzeb
+\end_layout
+
+\begin_layout Enumerate
+Specyfikacja systemu
+\end_layout
+
+\begin_layout Enumerate
+Projektowanie
+\end_layout
+
+\begin_layout Enumerate
+Programowanie
+\end_layout
+
+\begin_layout Enumerate
+Testowanie
+\end_layout
+
+\begin_layout Enumerate
+Integracja
+\end_layout
+
+\begin_layout Enumerate
+Adaptacja i modyfikacja
+\end_layout
+
+\begin_layout Enumerate
+Eksploatacja
+\end_layout
+
+\begin_layout Enumerate
+Dezaktualizacja
+\end_layout
+
+\begin_layout Section*
+Model Fry’ego
+\end_layout
+
+\begin_layout Enumerate
+Projektowania – realizowane są
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Formułowanie i analiza potrzeb
+\end_layout
+
+\begin_layout Enumerate
+Modelowanie konceptualny (opis modelu danych, modelu procesu danych w systemie)
+\end_layout
+
+\begin_layout Enumerate
+Projektowanie fizyczne
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Eksploatacja
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Wdrożenie
+\end_layout
+
+\begin_layout Enumerate
+Eksploatacja
+\end_layout
+
+\begin_layout Enumerate
+Kontrola
+\end_layout
+
+\begin_layout Enumerate
+Modyfikacja i adaptacja.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+Model z prototypem
+\end_layout
+
+\begin_layout Standard
+Polega na budowaniu prototypu, który prezentowany jest użytkownikowi celem
+ weryfikacji i na tej podstawie modyfikowany.
+ Takie podejście ma na celu zredukowanie czasu oczekiwania na konkretne
+ rezultaty, zapewnienie szybkiego sprzężenia zwrotnego pomiędzy użytkownikiem
+ a projektantem, a także zaangażowanie użytkownika w projektowanie i analizę
+ potrzeb.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Ogólne określenie potrzeb użytkownika
+\end_layout
+
+\begin_layout Enumerate
+Konstruowanie prototypu
+\end_layout
+
+\begin_layout Enumerate
+Użycie i weryfikacja prototypu
+\end_layout
+
+\begin_layout Enumerate
+Modyfikacja prototypu (w zależności od wcześniejszej oceny klienta po wprowadzen
+iu zmian następuje powrót do punktu poprzedniego lub następnego)
+\end_layout
+
+\begin_layout Enumerate
+Przekształcenie w ostatecznie funkcjonujący system
+\end_layout
+
+\begin_layout Enumerate
+Eksploatacja i modyfikacja systemu
+\end_layout
+
+\begin_layout Standard
+W zależności od wyników prezentacji możemy mieć do czynienia z jednym z
+ dwóch modeli prototypów: 
+\end_layout
+
+\begin_layout Enumerate
+Tymczasowy --- prototyp odrzucony; stworzony na potrzeby zrozumienie potrzeb
+ klienta; może nigdy nie być przekształcony w ostatecznie funkcjonujący
+ system,
+\end_layout
+
+\begin_layout Enumerate
+Rozwojowy --- prototyp przekształcany w ostatecznie funkcjonujący system.
+\end_layout
+
+\begin_layout Section*
+Model spiralny
+\end_layout
+
+\begin_layout Enumerate
+planowania
+\end_layout
+
+\begin_layout Enumerate
+analizy ryzyka
+\end_layout
+
+\begin_layout Enumerate
+konstruowania
+\end_layout
+
+\begin_layout Enumerate
+weryfikacji.
+\end_layout
+
+\begin_layout Standard
+Pracę rozpoczynamy od wstępnych wymagań i planowania projektu, następnie
+ na ich podstawie analizujemy ryzyko i konstruujemy wstępny prototyp, który
+ zostaje poddany weryfikacji przez użytkownika.
+ W kolejnym cyklu planujemy zmiany i analizujemy ryzyko oparte na reakcji
+ użytkownika, po czym tworzymy kolejny prototyp do weryfikacji.
+ Po kolejnych kilku przebiegach należy spodziewać się, że system przyjmie
+ oczekiwaną postać i zakończymy pracę konstrukcją systemu.
  
 \end_layout
 
