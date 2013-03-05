@@ -1716,8 +1716,113 @@ Scharakteryzować politykę bezpieczeństwa w systemach komputerowych.
 
 \begin_layout Section
 Wyjaśnij terminy: identyfikacja, uwierzytelnienie, autoryzacja, spójność
- danych, ślad kontroli.
+ danych, ślad kontroli
+\end_layout
+
+\begin_layout Section*
+Identyfikacja
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://pl.wikipedia.org/wiki/Uwierzytelnianie
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podmiot deklaruje swoją tożsamość.
+\end_layout
+
+\begin_layout Section*
+Uwierzytelnianie
+\end_layout
+
+\begin_layout Standard
+Strona ufająca stosuje odpowiednią technikę uwierzytelniania (authentication
+ mechanism) w celu weryfikacji zadeklarowanej wcześniej tożsamości.
+\end_layout
+
+\begin_layout Section*
+Autoryzacja
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://pl.wikipedia.org/wiki/Autoryzacja_(informatyka)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Potwierdzenie, czy dany podmiot jest uprawniony do uzyskania dostępu do
+ żądanego zasobu.
+ Na tym etapie autentyczność podmiotu jest już potwierdzona, nie musi on
+ jednak być uprawnionym do uzyskania dostępu w żądanym zakresie.
+\end_layout
+
+\begin_layout Standard
+Celem autoryzacji jest kontrola dostępu (access control), która potwierdza,
+ czy dany podmiot jest uprawniony do korzystania z żądanego zasobu.
+ Dla określenia uprawnień danego podmiotu konieczne jest najpierw stwierdzenie
+ jego tożsamości, dlatego w typowym zastosowaniu autoryzacja następuje dopiero
+ po potwierdzeniu tożsamości podmiotu za pomocą identyfikacji i uwierzytelnienia.
  
+\end_layout
+
+\begin_layout Section*
+Integralność danych
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://pl.wikipedia.org/wiki/Integralność_danych
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Funkcja bezpieczeństwa polegająca na tym, że dane nie zostały zmienione,
+ dodane lub usunięte w nieautoryzowany sposób.
+\end_layout
+
+\begin_layout Standard
+W technice informatycznej i telekomunikacyjnej ochrona integralności zapobiega
+ przypadkowemu zniekształceniu danych podczas odczytu, zapisu, transmisji
+ lub magazynowania.
+ Wykorzystuje się tutaj sumy kontrolne i kody korekcyjne takie jak CRC.
+ 
+\end_layout
+
+\begin_layout Standard
+W bezpieczeństwie teleinformatycznym ochrona integralności zapobiega celowej
+ modyfikacji danych dokonanej z użyciem zaawansowanych technik, mających
+ na celu ukrycie faktu dokonania zmiany.
+ Wykorzystuje się tutaj techniki kryptograficzne takie jak kody MAC odporne
+ na celowe manipulacje.
+ W odniesieniu do relacyjnych baz danych integralność definiowana jest jako
+ połączenie trzech koncepcji: dokładność (ang.
+ accuracy), prawdziwość (ang.
+ correctness), oraz aktualność (ang.
+ validity).
+ 
+\end_layout
+
+\begin_layout Section*
+Ślad kontroli
+\end_layout
+
+\begin_layout Standard
+???
 \end_layout
 
 \begin_layout Section
@@ -1728,7 +1833,164 @@ Scharakteryzować komponenty zintegrowanych programów bezpieczeństwa w system
 
 \begin_layout Section
 Podstawowe modele kontroli dostępu do systemów operacyjnych i baz danych.
- 
+\end_layout
+
+\begin_layout Paragraph*
+DAC
+\end_layout
+
+\begin_layout Standard
+określa podstawowe metody kontroli dostępu do obiektów w systemie plików.
+ Administratorem uprawnień jest sysadmin lub właściciel obiektu (pliku).
+ Rozbudowana wersją DAC jest model ACL – list kontroli dostępu.
+\end_layout
+
+\begin_layout Paragraph*
+MAC
+\end_layout
+
+\begin_layout Standard
+ochrania i zabezpiecza procesy, dane i urządzenia systemowe przed szkodliwym
+ nadużyciem/wykorzystaniem za pomocą tzw.
+ etykiet.
+ Właściciel obiektu po jego utworzeniu może nie mieć prawa do późniejszego
+ np.
+ odczytu!
+\end_layout
+
+\begin_layout Paragraph*
+RBAC
+\end_layout
+
+\begin_layout Standard
+ogranicza dostęp do zasobów na podstawie roli, jaką użytkownik pełni w systemie.
+ Przystosowany do organizacji, w której działa.
+ Ukierunkowany na czynności użytkownika.
+ Może wykorzystywać DAC, MAC i inne modele.
+\end_layout
+
+\begin_layout Paragraph*
+przejmij - przekaż
+\end_layout
+
+\begin_layout Itemize
+Rozszerzenie modelu macierzowego (DAC) – ujmuje kwestie delegacji i przejmowania
+ uprawnień.
+\end_layout
+
+\begin_layout Itemize
+Informacja o uprawnieniach jest pamiętana w postaci grafu, który opisuje
+ wszystkie powiązania dot.
+ przepływu informacji.
+\end_layout
+
+\begin_layout Itemize
+Podmiot ma (w tym modelu!) uprawnienia do obiektu albo innego podmiotu.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Przekaż - podmiot x przekazuje uprawnienie h, jakie ma do z (obiektu lub
+ podmiotu), obiektowi lub podmiotowi y pod warunkiem, że x ma uprawnienie
+ g do przekazywania uprawnień.
+\end_layout
+
+\begin_layout Itemize
+Przejmij - podmiot x przekazuje uprawnienie h (pozbywając się uprawnienia
+ h do obiektu z), jakie ma do z (obiektu lub podmiotu), obiektowi lub podmiotowi
+ y pod warunkiem, że y ma uprawnienie t do przejęcia uprawnień.
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph*
+Wooda
+\end_layout
+
+\begin_layout Standard
+Skierowany na realizację polityki bezpieczeństwa w środowisku baz danych.
+\end_layout
+
+\begin_layout Itemize
+poziomy
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Zewnętrzny,
+\end_layout
+
+\begin_layout Itemize
+Konceptualny,
+\end_layout
+
+\begin_layout Itemize
+Wewnętrzny.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+podmioty to:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Użytkownicy,
+\end_layout
+
+\begin_layout Itemize
+administratorzy uprawnień.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+obiekty to 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+tablice bazy danych
+\end_layout
+
+\begin_layout Itemize
+kolumny tablic
+\end_layout
+
+\begin_layout Itemize
+tablice wirtualne (widoki)
+\end_layout
+
+\begin_layout Itemize
+ew.
+ funkcje.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Dla poziomu zewnętrznego i konceptualnego są definiowane reguły dostępu,
+ które muszą być niesprzeczne.
+\end_layout
+
+\begin_layout Paragraph*
+Jajodhi-Sadhu
+\end_layout
+
+\begin_layout Standard
+Kontrola dostępu MAC dla baz danych.
+\end_layout
+
+\begin_layout Itemize
+Do modelu relacyjnego są wprowadzone atrybuty klasyfikacyjne zw.
+ etykietami bezpieczeństwa: jawny < poufny < tajny < ściśle tajny
+\end_layout
+
+\begin_layout Itemize
+Schemat relacyjny wielopoziomowy: Każdy atrybut oprócz wartości ma nadany
+ atrybut klasyfikacyjny, a ponadto cała krotka ma również taki atrybut.
+\end_layout
+
+\begin_layout Itemize
+Polityka bezpieczeństwa to kontrola dostępu do realizacji operacji typu
+ dołącz, aktualizuj, usuń na relacjach wielopoziomowych.
 \end_layout
 
 \begin_layout Section
@@ -1737,8 +1999,29 @@ Porównanie kryptografii symetrycznej i asymetrycznej.
 \end_layout
 
 \begin_layout Section
-Scharakteryzować podpis elektroniczny.
- 
+Scharakteryzować podpis elektroniczny
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://pl.wikipedia.org/wiki/Podpis_cyfrowy
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Matematyczny sposób potwierdzania autentyczności cyfrowego dokumentu.
+ Istnieje wiele schematów podpisów cyfrowych, obecnie jednak najpopularniejszym
+ jest schemat podpisu dokumentów cyfrowych w systemach kryptograficznych
+ z kluczem publicznym i jednokierunkową funkcją skrótu - w systemie tym
+ do oryginalnej wiadomości dołączany jest skrót dokumentu, zaszyfrowany
+ prywatnym kluczem nadawcy.
+ Potwierdzenie autentyczności wiadomości jest możliwe po odszyfrowaniu skrótu
+ kluczem publicznym nadawcy i porównaniu go z wytworzonym skrótem odebranego
+ dokumentu.
 \end_layout
 
 \begin_layout Section
@@ -1747,8 +2030,66 @@ Charakterystyka protokołów uwierzytelniania.
 \end_layout
 
 \begin_layout Section
-Omówić cechy systemów rozproszonych.
+Omówić cechy systemów rozproszonych
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://pl.wikipedia.org/wiki/System_rozproszony
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To zbiór niezależnych urządzeń technicznych połączonych w jedną, spójną
+ logicznie całość.
+ Zwykle łączonymi urządzeniami są komputery, rzadziej – systemy automatyki.
+ Połączenie najczęściej realizowane jest przez sieć komputerową, jednak
+ można wykorzystać również inne – prostsze – magistrale komunikacyjne.
+ Urządzenia są wyposażone w oprogramowanie umożliwiające współdzielenie
+ zasobów systemowych.
  
+\end_layout
+
+\begin_layout Enumerate
+Dzielenie zasobów (ang.
+ resource sharing) – wielu użytkowników systemu może korzystać z danego
+ zasobu (np.
+ drukarek, plików, usług, itp.).
+\end_layout
+
+\begin_layout Enumerate
+Otwartość (ang.
+ openness) – podatność na rozszerzenia, możliwość rozbudowy systemu zarówno
+ pod względem sprzętowym, jak i oprogramowania.
+\end_layout
+
+\begin_layout Enumerate
+Współbieżność (ang.
+ concurrency) – zdolność do przetwarzania wielu zadań jednocześnie.
+\end_layout
+
+\begin_layout Enumerate
+Skalowalność (ang.
+ scalability) – cecha systemu umożliwiająca zachowanie podobnej wydajności
+ systemu przy zwiększaniu skali systemu (np.
+ liczby procesów, komputerów, itp.).
+\end_layout
+
+\begin_layout Enumerate
+Tolerowanie awarii (ang.
+ fault tolerance) – właściwość systemu umożliwiająca działania systemu mimo
+ pojawiania się błędów i (lub) uszkodzeń (np.
+ przez utrzymywanie nadmiarowego sprzętu).
+\end_layout
+
+\begin_layout Enumerate
+Przezroczystość (ang.
+ transparency) – właściwość systemu powodująca postrzeganie systemu przez
+ użytkownika jako całości, a nie poszczególnych składowych.
 \end_layout
 
 \begin_layout Section
