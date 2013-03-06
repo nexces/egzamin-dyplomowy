@@ -2098,7 +2098,70 @@ Scharakteryzować przykładowe architektury systemów rozproszonych.
 \end_layout
 
 \begin_layout Section
-Porównać technologie CORBA i JAVA RMI.
+Porównać technologie CORBA i JAVA RMI
+\end_layout
+
+\begin_layout Section*
+Common Object Request Broker Architecture
+\end_layout
+
+\begin_layout Standard
+Technologia zapewniająca komunikację pomiędzy obiektami pracującymi w heterogeni
+cznych (różnorodnych) systemach komputerowych.
+ Obiekty pełniące dowolne funkcje mogą być zaimplementowane w różnych językach
+ programowania, na dowolnej platformie sprzętowej, pod kontrolą różnych
+ systemów operacyjnych.
+ 
+\end_layout
+
+\begin_layout Standard
+Opis obiektów, a właściwie interfejsów do nich, znajduje się w pliku IDL
+ (ang.
+ Interface Definition Language), który jest kompilowany na kod zajmujący
+ się przekazywaniem metod (w przypadku implementacji technologii CORBA w
+ niektórych językach interpretowanych, plik IDL jest interpretowany w czasie
+ wykonania).
+ 
+\end_layout
+
+\begin_layout Standard
+Obiekty mają swoje adresy IOR (ang.
+ Interoperable Object Reference).
+ Są to kilkusetznakowe adresy kodujące wiele informacji o obiekcie, m.in.
+ adres komputera, adres programu na komputerze, informacje o kolejności
+ zapisu bajtów (czy jest to big endian, czy little endian), numer obiektu,
+ typ obiektu, itd.
+ 
+\end_layout
+
+\begin_layout Standard
+Adresy IOR mogą dotyczyć także niskopoziomowych protokołów transmisji danych
+ – zwykle GIOP (ang.
+ General Inter-ORB Protocol) lub IIOP (ang.
+ Internet Inter-ORB Protocol).
+ 
+\end_layout
+
+\begin_layout Section*
+Remote Method Invocation
+\end_layout
+
+\begin_layout Standard
+To mechanizm umożliwiający zdalne wywołanie metod obiektów.
+ Obiekty te mogą znajdować się w innych maszynach wirtualnych Javy, które
+ mogą znajdować się na innych komputerach.
+ 
+\end_layout
+
+\begin_layout Standard
+Obiekty zdalne rejestrowane są pod wybranymi nazwami w serwisie RMI Registry.
+ Aplikacja kliencka ściąga z RMI Registry tzw.
+ stub tego obiektu, który umożliwia komunikację z obiektem zdalnym przy
+ użyciu wyeksportowanych metod w ten sam sposób, jakby chodziło o obiekt
+ lokalny.
+ Rola RMI Registry w tym miejscu kończy się - nie pośredniczy on w komunikacji
+ pomiędzy aplikacją kliencką a obiektem zdalnym.
+ Parametry metod będące obiektami przy wywołaniu zdalnym są serializowane.
  
 \end_layout
 
@@ -2107,8 +2170,67 @@ Omówić usługi nazewnicze i role rejestrów w systemach rozproszonych.
 \end_layout
 
 \begin_layout Section
-Sklasyfikować i omówić języki programowania serwisów Internetowych.
- 
+Sklasyfikować i omówić języki programowania serwisów Internetowych
+\end_layout
+
+\begin_layout Section*
+PHP
+\end_layout
+
+\begin_layout Section*
+Java
+\end_layout
+
+\begin_layout Section*
+C#
+\end_layout
+
+\begin_layout Section*
+ASP
+\end_layout
+
+\begin_layout Section*
+Ruby
+\end_layout
+
+\begin_layout Section*
+Scala
+\end_layout
+
+\begin_layout Section*
+Lisp
+\end_layout
+
+\begin_layout Section*
+Perl
+\end_layout
+
+\begin_layout Section*
+Python
+\end_layout
+
+\begin_layout Section*
+ColdFusion
+\end_layout
+
+\begin_layout Section*
+VB.NET
+\end_layout
+
+\begin_layout Section*
+JavaScript
+\end_layout
+
+\begin_layout Section*
+C++
+\end_layout
+
+\begin_layout Section*
+Clojure
+\end_layout
+
+\begin_layout Standard
+???
 \end_layout
 
 \begin_layout Section
@@ -2117,8 +2239,204 @@ Scharakteryzować język PHP.
 \end_layout
 
 \begin_layout Section
-Wymienić i krótko omówić instrukcje sterujące w PHP.
+Wymienić i krótko omówić instrukcje sterujące w PHP
+\end_layout
+
+\begin_layout Section*
+elseif/else if
+\end_layout
+
+\begin_layout Standard
+Wybrany blok kodu jest wykonywany w zależności od wartości wyrażenia logicznego.
+\end_layout
+
+\begin_layout Section*
+while
+\end_layout
+
+\begin_layout Standard
+Wykonywanie bloku kodu jest powtarzane dopóki wartość wyrażenie logicznego
+ jest prawdą.
+\end_layout
+
+\begin_layout Section*
+do-while
+\end_layout
+
+\begin_layout Standard
+Jak pętla 
+\emph on
+while
+\emph default
+ ale najpierw jest wykonywana jedna iteracja, a dopiero po jej zakończeniu
+ jest sprawdzana wartość wyrażenie logicznego decydującego o zakończeniu
+ iteracji.
+\end_layout
+
+\begin_layout Section*
+for
+\end_layout
+
+\begin_layout Standard
+Służy do budowania pętli bazujących na zmiennych sterujących o danej wartości
+ startowej, wyrażeniu logicznego decydującego o zakończeniu iteracji oraz
+ bloku zmieniającego wartość zmiennych sterujących.
+\end_layout
+
+\begin_layout Section*
+foreach
+\end_layout
+
+\begin_layout Standard
+Ułatwia iteracje po wartościach przechowywanych w tablicach.
+\end_layout
+
+\begin_layout Section*
+break
+\end_layout
+
+\begin_layout Standard
+Kończy wykonywanie instrukcji 
+\emph on
+for
+\emph default
+, 
+\emph on
+foreach
+\emph default
+, 
+\emph on
+while
+\emph default
+, 
+\emph on
+do-while
+\emph default
+ lub 
+\emph on
+switch
+\emph default
+.
+ Przyjmuje parametr określający liczbę zagnieżdżonych instrukcji których
+ wykonywanie kończy.
+\end_layout
+
+\begin_layout Section*
+continue
+\end_layout
+
+\begin_layout Standard
+Wykorzystywane jest do zakończenia przetwarzania obecnie wykonywanej pętli
  
+\emph on
+while
+\emph default
+, 
+\emph on
+do-while
+\emph default
+, for lub 
+\emph on
+foreach
+\emph default
+ i przejścia do wykonania następnej iteracji.
+\end_layout
+
+\begin_layout Section*
+switch
+\end_layout
+
+\begin_layout Standard
+Podobne do 
+\emph on
+if
+\emph default
+, użyteczne tam gdzie chcemy porównać wartość jednej zmiennej z wieloma
+ innymi wartościami i uruchomić inny blok kodu w zależności od tego z którą
+ wartością zmienna się równa.
+\end_layout
+
+\begin_layout Section*
+declare
+\end_layout
+
+\begin_layout Standard
+Umożliwia ustawianie dyrektyw wykonywalnych dla bloku kodu PHP.
+ Podstawową dyrektywą jest dyrektywa 
+\emph on
+encoding
+\emph default
+ umożliwiająca zmianę kodowania znaków.
+ Dyrektywa 
+\emph on
+tick
+\emph default
+ jest pomocna przy profilowaniu kodu.
+\end_layout
+
+\begin_layout Section*
+return
+\end_layout
+
+\begin_layout Standard
+Kończy wywołanie funkcji.
+ Wartość podana jako argument do instrukcji 
+\emph on
+return
+\emph default
+ jest wartością zwracaną przez funkcję której wywołanie kończy.
+\end_layout
+
+\begin_layout Section*
+require
+\end_layout
+
+\begin_layout Standard
+To to samo co 
+\emph on
+include
+\emph default
+ ale w razie błędu powoduje zakończenie działania skryptu z błędem.
+\end_layout
+
+\begin_layout Section*
+include
+\end_layout
+
+\begin_layout Standard
+Załącza i wykonuje kod PHP znajdujący się we wskazanym pliku.
+\end_layout
+
+\begin_layout Section*
+require_once
+\end_layout
+
+\begin_layout Standard
+To samo co 
+\emph on
+require
+\emph default
+ ale nie wykonywane jest ponownie jeżeli już dany plik został załadowany.
+\end_layout
+
+\begin_layout Section*
+include_once
+\end_layout
+
+\begin_layout Standard
+To samo co 
+\emph on
+include
+\emph default
+ ale nie wykonywane jest ponownie jeżeli już dany plik został załadowany.
+\end_layout
+
+\begin_layout Section*
+goto
+\end_layout
+
+\begin_layout Standard
+Umożliwia przełączenie punktu wykonywania kodu do innego miejsca programu.
 \end_layout
 
 \begin_layout Section
