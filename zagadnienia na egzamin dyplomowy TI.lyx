@@ -2445,8 +2445,11 @@ Scharakteryzować język JavaScript.
 \end_layout
 
 \begin_layout Section
-Omówić kolejne kroki obsługi technologii AJAX z wykorzystaniem PHP.
- 
+Omówić kolejne kroki obsługi technologii AJAX z wykorzystaniem PHP
+\end_layout
+
+\begin_layout Standard
+WTF??
 \end_layout
 
 \begin_layout Section
@@ -2455,8 +2458,102 @@ Wymienić i opisać funkcje i operatory stosowane w SQL/XML.
 \end_layout
 
 \begin_layout Section
-Podać i omówić przykład schematu XML w DTD.
- 
+Podać i omówić przykład schematu XML w DTD
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+<!ELEMENT people_list (person)*>
+\end_layout
+
+\begin_layout Plain Layout
+
+<!ELEMENT person (name, birthdate?, gender?, socialsecuritynumber?)>
+\end_layout
+
+\begin_layout Plain Layout
+
+<!ELEMENT name (#PCDATA)>
+\end_layout
+
+\begin_layout Plain Layout
+
+<!ELEMENT birthdate (#PCDATA)>
+\end_layout
+
+\begin_layout Plain Layout
+
+<!ELEMENT gender (#PCDATA)>
+\end_layout
+
+\begin_layout Plain Layout
+
+<!ELEMENT socialsecuritynumber (#PCDATA)>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+\end_layout
+
+\begin_layout Plain Layout
+
+<!DOCTYPE people_list SYSTEM "example.dtd">
+\end_layout
+
+\begin_layout Plain Layout
+
+<people_list>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <person>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <name>Fred Bloggs</name>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <birthdate>2008-11-27</birthdate>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <gender>Male</gender>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </person>
+\end_layout
+
+\begin_layout Plain Layout
+
+</people_list> 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2465,8 +2562,227 @@ Podać i omówić przykład schematu XML w XML Schema.
 \end_layout
 
 \begin_layout Section
-Omówić możliwość przetwarzania dokumentów XML w XQuery.
- 
+Omówić możliwość przetwarzania dokumentów XML w XQuery
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://www.w3.org/TR/xquery/#id-path-expressions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To język zapytań (jednakże posiadający pewne cechy języka programowania)
+ służący do przeszukiwania dokumentów XML.
+\end_layout
+
+\begin_layout Itemize
+Zapytania typu FLWOR (FOR, LET, WHERE, ORDER BY, RETURN)
+\end_layout
+
+\begin_layout Itemize
+Wyrażenia ścieżkowe
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+osie
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+child
+\end_layout
+
+\begin_layout Itemize
+descendant
+\end_layout
+
+\begin_layout Itemize
+parent
+\end_layout
+
+\begin_layout Itemize
+ancestor
+\end_layout
+
+\begin_layout Itemize
+following-sibling
+\end_layout
+
+\begin_layout Itemize
+preceding-sibling
+\end_layout
+
+\begin_layout Itemize
+following
+\end_layout
+
+\begin_layout Itemize
+preceding
+\end_layout
+
+\begin_layout Itemize
+attribute
+\end_layout
+
+\begin_layout Itemize
+self
+\end_layout
+
+\begin_layout Itemize
+descendant-or-self
+\end_layout
+
+\begin_layout Itemize
+ancestor-or-self
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+testy
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+node() - jakikolwiek węzeł
+\end_layout
+
+\begin_layout Itemize
+text() - tylko węzły tekstowe
+\end_layout
+
+\begin_layout Itemize
+comment() - tylko węzły komentarza
+\end_layout
+
+\begin_layout Itemize
+element() - tylko elementy
+\end_layout
+
+\begin_layout Itemize
+schema-element(person) - elementy których schemat bazuje na schemacie elementu
+ person
+\end_layout
+
+\begin_layout Itemize
+element(person) - elementy o nazwie person
+\end_layout
+
+\begin_layout Itemize
+attribute() - atrybuty
+\end_layout
+
+\begin_layout Itemize
+attribute(price) - atrybuty o nazwie price
+\end_layout
+
+\begin_layout Itemize
+document-node() - węzły dokumentu
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+predykaty
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+np.
+ descendant::toy[attribute::color = "red"]
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+filtry
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+np.
+ $products[price gt 100]
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+wyrażenia logiczne
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+np.
+ 1 eq 2 and 3 idiv 0 = 1 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+   for $d in doc("dzialy.xml")//nrdzialu
+\end_layout
+
+\begin_layout Plain Layout
+
+   let $p := doc("pracownicy.xml")//pracownik[nrdzialu = $d]
+\end_layout
+
+\begin_layout Plain Layout
+
+   where count($p) >= 10
+\end_layout
+
+\begin_layout Plain Layout
+
+   order by avg($p/pensja) descending
+\end_layout
+
+\begin_layout Plain Layout
+
+   return
+\end_layout
+
+\begin_layout Plain Layout
+
+     <ZbiorczoDzial>
+\end_layout
+
+\begin_layout Plain Layout
+
+        { $d,
+\end_layout
+
+\begin_layout Plain Layout
+
+           <zatrudnionych>{count($p)}</zatrudnionych>,
+\end_layout
+
+\begin_layout Plain Layout
+
+           <sredniapensja>{avg($p/salary)}</sredniapensja>
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+     </ZbiorczoDzial>
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2475,8 +2791,248 @@ Scharakteryzować obsługę baz danych w PHP.
 \end_layout
 
 \begin_layout Section
-Scharakteryzować obsługę baz danych w Javie.
+Scharakteryzować obsługę baz danych w Javie
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://pl.wikipedia.org/wiki/Java_DataBase_Connectivity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Java DataBase Connectivity (JDBC)
+\end_layout
+
+\begin_layout Standard
+Interfejs programowania opracowany w 1996 r.
+ przez Sun Microsystems, umożliwiający niezależnym od platformy aplikacjom
+ napisanym w języku Java porozumiewać się z bazami danych za pomocą języka
+ SQL.
+ Interfejs ten jest odpowiednikiem standardu ODBC opracowanego przez SQL
+ Access Group.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Connection conn = DriverManager.getConnection(
+\end_layout
+
+\begin_layout Plain Layout
+
+     "jdbc:somejdbcvendor:other data needed by some jdbc vendor",
+\end_layout
+
+\begin_layout Plain Layout
+
+     "myLogin",
+\end_layout
+
+\begin_layout Plain Layout
+
+     "myPassword" );
+\end_layout
+
+\begin_layout Plain Layout
+
+try {
+\end_layout
+
+\begin_layout Plain Layout
+
+     /* you use the connection here */
+\end_layout
+
+\begin_layout Plain Layout
+
+} finally {
+\end_layout
+
+\begin_layout Plain Layout
+
+    //It's important to close the connection when you are done with it
+\end_layout
+
+\begin_layout Plain Layout
+
+    try { conn.close(); } catch (Throwable ignore) { /* Propagate the original
+ exception
+\end_layout
+
+\begin_layout Plain Layout
+
+instead of this one that you may want just logged */ }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Statement stmt = conn.createStatement();
+\end_layout
+
+\begin_layout Plain Layout
+
+try {
+\end_layout
+
+\begin_layout Plain Layout
+
+    ResultSet rs = stmt.executeQuery( "SELECT * FROM MyTable" );
+\end_layout
+
+\begin_layout Plain Layout
+
+    try {
+\end_layout
+
+\begin_layout Plain Layout
+
+        while ( rs.next() ) {
+\end_layout
+
+\begin_layout Plain Layout
+
+            int numColumns = rs.getMetaData().getColumnCount();
+\end_layout
+
+\begin_layout Plain Layout
+
+            for ( int i = 1 ; i <= numColumns ; i++ ) {
+\end_layout
+
+\begin_layout Plain Layout
+
+               // Column numbers start at 1.
+\end_layout
+
+\begin_layout Plain Layout
+
+               // Also there are many methods on the result set to return
+\end_layout
+
+\begin_layout Plain Layout
+
+               //  the column as a particular type.
+ Refer to the Sun documentation
+\end_layout
+
+\begin_layout Plain Layout
+
+               //  for the list of valid conversions.
+\end_layout
+
+\begin_layout Plain Layout
+
+               System.out.println( "COLUMN " + i + " = " + rs.getObject(i)
+ );
+\end_layout
+
+\begin_layout Plain Layout
+
+            }
+\end_layout
+
+\begin_layout Plain Layout
+
+        }
+\end_layout
+
+\begin_layout Plain Layout
+
+    } finally {
+\end_layout
+
+\begin_layout Plain Layout
+
+        try { rs.close(); } catch (Throwable ignore) { /* Propagate the original
+ exception
+\end_layout
+
+\begin_layout Plain Layout
+
+instead of this one that you may want just logged */ }
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+} finally {
+\end_layout
+
+\begin_layout Plain Layout
+
+    try { stmt.close(); } catch (Throwable ignore) { /* Propagate the original
+ exception
+\end_layout
+
+\begin_layout Plain Layout
+
+instead of this one that you may want just logged */ }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Hibernate
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://pl.wikipedia.org/wiki/Hibernate
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Framework do realizacji warstwy dostępu do danych (ang.
+ persistance layer).
+ Zapewnia on przede wszystkim translację danych pomiędzy relacyjną bazą
+ danych, a światem obiektowym (ang.
+ O/R mapping).
+ Opiera się na wykorzystaniu opisu struktury danych za pomocą języka XML,
+ dzięki czemu można "rzutować" obiekty, stosowane w obiektowych językach
+ programowania, takich jak Java bezpośrednio na istniejące tabele bazy danych.
+ Dodatkowo Hibernate zwiększa wydajność operacji na bazie danych dzięki
+ buforowaniu i minimalizacji liczby przesyłanych zapytań.
 \end_layout
 
 \begin_layout Section
@@ -2485,7 +3041,11 @@ Omówić metody zabezpieczania internetowych baz danych.
 \end_layout
 
 \begin_layout Section
-Scharakteryzować modele danych multimedialnych w systemach internetowych.
+Scharakteryzować modele danych multimedialnych w systemach internetowych
+\end_layout
+
+\begin_layout Standard
+??
 \end_layout
 
 \begin_layout Section
@@ -2493,7 +3053,70 @@ Wymienić i omówić kolejne kroki wytwarzania witryn internetowych.
 \end_layout
 
 \begin_layout Section
-Omówić rolę administratora systemu informatycznego.
+Omówić rolę administratora systemu informatycznego
+\end_layout
+
+\begin_layout Section*
+Administrator
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://pl.wikipedia.org/wiki/Administrator_(informatyka)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Informatyk zajmujący się zarządzaniem systemem informatycznym i odpowiadający
+ za jego sprawne działanie.
+ Wyróżnia się administratorów:
+\end_layout
+
+\begin_layout Itemize
+systemów operacyjnych
+\end_layout
+
+\begin_layout Itemize
+baz danych
+\end_layout
+
+\begin_layout Itemize
+serwerów
+\end_layout
+
+\begin_layout Itemize
+sieci
+\end_layout
+
+\begin_layout Itemize
+poszczególnych usług typu fora dyskusyjne, czaty itp., gdzie rola administratora
+ sprowadza się przede wszystkim do moderowania.
+\end_layout
+
+\begin_layout Section*
+Zadania
+\end_layout
+
+\begin_layout Standard
+Do zadań administratora należy nadzorowanie pracy serwerów, dodawanie, ewentualn
+a edycja danych, i kasowanie kont ich użytkowników, konfiguracja komputerów,
+ instalowanie oprogramowania, dbanie o bezpieczeństwo systemu i opcjonalnie
+ samych danych, nadzorowanie, wykrywanie i eliminowanie nieprawidłowości,
+ asystowanie i współpraca z zewnętrznymi specjalistami przy pracach instalacyjny
+ch, konfiguracyjnych i naprawczych, dbanie o porządek (dotyczy w szczególności
+ forów internetowych) itp.
+\end_layout
+
+\begin_layout Standard
+Ze względu na zakres obowiązków, specjalistyczna wiedza typowego administratora
+ może wykraczać poza znajomość administracji powierzonego mu oprogramowania
+ lub sieci, i dotyczyć pogranicza takich kategorii jak m.in.: elektronika,
+ znajomość wielu różnych języków programowania, kryptografia i kryptoanaliza,
+ etyka.
 \end_layout
 
 \begin_layout Section
@@ -2501,7 +3124,35 @@ Charakterystyka infrastruktur klucza publicznego PKI.
 \end_layout
 
 \begin_layout Section
-Protokół SSL/TSL i jego zastosowania.
+Protokół SSL/TSL i jego zastosowania
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://pl.wikipedia.org/wiki/Transport_Layer_Security
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+TLS zapewnia poufność i integralność transmisji danych, a także uwierzytelnienie
+ serwera, a niekiedy również klienta.
+ Opiera się na szyfrowaniu asymetrycznym oraz certyfikatach X.509.
+ 
+\end_layout
+
+\begin_layout Standard
+Według modelu OSI, TLS działa w warstwie prezentacji, dzięki czemu może
+ zabezpieczać protokoły warstwy najwyższej – warstwy aplikacji, np.: telnet,
+ HTTP, gopher, POP3, IMAP, NNTP, SIP.
+ 
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Section
