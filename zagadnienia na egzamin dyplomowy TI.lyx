@@ -3151,16 +3151,74 @@ Według modelu OSI, TLS działa w warstwie prezentacji, dzięki czemu może
  
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
 \begin_layout Section
 Aktorzy i przebieg ataków typu DDoS.
 \end_layout
 
 \begin_layout Section
-Bezpieczeństwo transakcji elektronicznych i protokół SET.
+Bezpieczeństwo transakcji elektronicznych i protokół SET
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://pl.wikipedia.org/wiki/Secure_Electronic_Transaction
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+SET (Secure Electronic Transaction) to protokół bezpiecznych transakcji
+ elektronicznych.
+ Jest standardem umożliwiającym bezpieczne przeprowadzenie transakcji z
+ wykluczeniem bezpośredniego kontaktu przez Internet, z użyciem kart kredytowych.
+ Projekt ten został ogłoszony 1 lutego 1996 roku.
+ Popierany przez dwie największe organizacje związane z kartami płatniczymi
+ - Visa i MasterCard oraz wspierany przez firmę IBM.
+ Protokół ten posiada cechy następujących technologii: SSL, STT, SEPP, SHTTP.
+ 
+\end_layout
+
+\begin_layout Standard
+System SET umożliwia komunikującym się stroną wymianę informacji w bezpieczny
+ sposób.
+ SET wykorzystuje kryptograficzną metodę umożliwiającą zastąpienie numeru
+ karty kredytowej certyfikatem.
+ Dzięki temu sprzedawca nie otrzymuje numeru karty kredytowej.
+\end_layout
+
+\begin_layout Standard
+Do przeprowadzenia transakcji wymagane są:
+\end_layout
+
+\begin_layout Itemize
+Po stronie klienta - przegladarka internetowa, system operacyjny posiadajacy
+ mechanizmy służące do obsługi certyfikatów (np.
+ repozytorium)
+\end_layout
+
+\begin_layout Itemize
+Po stronie sprzedawcy - serwer obsługujący protokół SET
+\end_layout
+
+\begin_layout Standard
+Protokół SET nie uzyskał jednak adaptacji na szeroką skalę, powodami tego
+ są:
+\end_layout
+
+\begin_layout Itemize
+Wymagana jest instalacja specjalnego oprogramowania (e-portfela)
+\end_layout
+
+\begin_layout Itemize
+Wysokie koszty i relatywna złożoność procesu wdrożenia przez sprzedawców
+ w porównaniu z alternatywnymi metodami opartymi o protokół SSL
+\end_layout
+
+\begin_layout Itemize
+Problematyczna dystrybucja certyfikatów klienta
 \end_layout
 
 \begin_layout Section
