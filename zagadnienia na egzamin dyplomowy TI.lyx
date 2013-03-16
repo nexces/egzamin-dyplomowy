@@ -68,8 +68,7 @@
 \begin_body
 
 \begin_layout Section
-Omówić pojęcie informatyki i jej działy.
- 
+Omówić pojęcie informatyki i jej działy
 \end_layout
 
 \begin_layout Standard
@@ -156,12 +155,78 @@ webmastering – projektowanie, programowanie i publikacja serwisów internetowy
 \end_layout
 
 \begin_layout Section
-Przedstawić cechy programowania strukturalnego.
- 
+Przedstawić cechy programowania strukturalnego
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "Wikipedia :: Programowanie strukturalne"
+target "http://pl.wikipedia.org/wiki/Programowanie_strukturalne"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+hierarchiczne dzielenie kodu
+\end_layout
+
+\begin_layout Itemize
+jeden punkt wejścia
+\end_layout
+
+\begin_layout Itemize
+jeden lub wiele punktów wyjścia
+\end_layout
+
+\begin_layout Itemize
+nieużywanie lub ograniczenie instrukcji skoku 
+\begin_inset Quotes eld
+\end_inset
+
+goto
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dobre struktury:
+\end_layout
+
+\begin_layout Itemize
+instrukcje warunkowe (if, if...else)
+\end_layout
+
+\begin_layout Itemize
+pętle (while, repeat)
+\end_layout
+
+\begin_layout Itemize
+instrukcje wyboru (case, ale nie switch z C i potomnych)
+\end_layout
+
+\begin_layout Standard
+Strukturalność zakłócają:
+\end_layout
+
+\begin_layout Itemize
+break
+\end_layout
+
+\begin_layout Itemize
+switch
+\end_layout
+
+\begin_layout Itemize
+continue
 \end_layout
 
 \begin_layout Section
-Scharakteryzować paradygmat programowania obiektowego.
+Scharakteryzować paradygmat programowania obiektowego
 \end_layout
 
 \begin_layout Section*
@@ -227,12 +292,63 @@ a i tworzenia specjalizowanych obiektów na podstawie bardziej ogólnych.
 \end_layout
 
 \begin_layout Section
-Omówić elementy klasy w programie.
- 
+Omówić elementy klasy w programie
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset CommandInset href
+LatexCommand href
+name "Wikipedia :: Klasa (programowanie obiektowe)"
+target "http://pl.wikipedia.org/wiki/Klasa_(programowanie_obiektowe)"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Metody określają możliwe zachowania, jake na obiekcie można wykonać, a ich
+ definicje znajdują się w klasie danego obiektu.
+ Metoda jest rodzajem podprogramu języka programowania z dodatkową właściwością,
+ th.
+ dostępem do atrybutów obiektu, na którym została wywołana.
+ Zbiór metod nazywany jest interfejsem.
+\end_layout
+
+\begin_layout Description
+Atrubuty, zwane także polami lub właściwościami, są to elementy składające
+ się na strukturę danych przechowywanych w obiektach.
+ Zbiór wartości wszystkich atrybutów tworzy stan obiektu, który przechowywany
+ jest w pamięciu lub innym nośniku danych pod określonym adresem, dzięki
+ czemu możliwy jest dostęp do niego za pośrednictwem referencji.
+\end_layout
+
+\begin_layout Description
+Niezmienniki to elementy stałe zachowywane przez wszystkie metody klasy.
+ Niezmiennik jest pewnym wyrażeniem odnoszącym się do atrybutu, które musi
+ być zawsze spełnione aby stan obiektu był prawidłowy, niezależnie od tego,
+ jakie operacje na nim wykonamy.
+ Niezmienniki mogą być implementowane poprzez zabronienie bezpośredniego
+ dostępu do atrybutów obiektu i utworzenie dodatkowych metod dostepowych,
+ które oprócz ich stawiania, sprawdzają także niezmienniki.
+ W niektórych językach niezmienniki można definiować bezpośrednio jako część
+ specyfikacji klasy.
+\end_layout
+
+\begin_layout Description
+Elementy
+\begin_inset space ~
+\end_inset
+
+statyczne nie są związane z żadnym konkretnym obiektem klasy, lecz tworzą
+ globalny stan oraz globalnie dostepne operacje, które można wywoływać nawet
+ wtedy, gdy nie posiadamy żadnej instancji klasy.
 \end_layout
 
 \begin_layout Section
-Scharakteryzować cechy algorytmów, w tym złożoność obliczeniową.
+Scharakteryzować cechy algorytmów, w tym złożoność obliczeniową
 \end_layout
 
 \begin_layout Standard
@@ -308,8 +424,106 @@ Na przykład klasa P to zbiór problemów decyzyjnych, które można rozwiązać
 
 \begin_layout Section
 Wyjaśnić pojęcie algorytmu i dokonać klasyfikacji algorytmów wg wybranych
- kryteriów.
+ kryteriów
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "Wikipedia :: Algorytm"
+target "http://pl.wikipedia.org/wiki/Algorytm"
+
+\end_inset
+
  
+\begin_inset CommandInset href
+LatexCommand href
+name "Wikipedia (ENG) :: Algorytm"
+target "http://en.wikipedia.org/wiki/Algorithm"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Algorytm skończony ciąg jasno zdefiniowanych czynności, koniecznych do wykonania
+ pewnego rodzaju zadań.
+ Algorytm ma przeprowadzić system z pewnego stanu początkowego do pożądanego
+ stanu końcowego.
+\end_layout
+
+\begin_layout Description
+Algorytm to jednoznaczny przepis obliczenia w skończonym czasie pewnych
+ danych wejściowych do pewnych danych wynikowych.
+\end_layout
+
+\begin_layout Standard
+Klasyfikacja, ze względu na:
+\end_layout
+
+\begin_layout Itemize
+implementację
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+rekursywne,
+\begin_inset space ~
+\end_inset
+
+iteracyjne algorytm rekursywny wywołuje sam siebie dopóki nie zostaną spełnione
+ pewne warunki; algorytm iteracyjny wykorzystuje pętle i czasem dodatkowe
+ struktury danych aby rozwiązać dany problem
+\end_layout
+
+\begin_layout Description
+logiczne
+\end_layout
+
+\begin_layout Description
+szeregowe,
+\begin_inset space ~
+\end_inset
+
+równoległe,
+\begin_inset space ~
+\end_inset
+
+rozproszone
+\end_layout
+
+\begin_layout Description
+deterministyczne,
+\begin_inset space ~
+\end_inset
+
+niestederministyczne
+\end_layout
+
+\begin_layout Description
+dokładne,
+\begin_inset space ~
+\end_inset
+
+przybliżeniowe
+\end_layout
+
+\begin_layout Description
+kwantowe?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+metodę działania
+\end_layout
+
+\begin_layout Itemize
+obszar problemu
+\end_layout
+
+\begin_layout Itemize
+złożoność
 \end_layout
 
 \begin_layout Section
@@ -412,27 +626,95 @@ cego w programie
 \end_layout
 
 \begin_layout Section
-Porównać język Java oraz C++.
- 
-\end_layout
-
-\begin_layout Section
-Scharakteryzować wybrane środowisko programistyczne języka C++.
- 
+Porównać język Java oraz C++
 \end_layout
 
 \begin_layout Standard
-WTF?
+
+\lang english
+\begin_inset CommandInset href
+LatexCommand href
+name "Wikipedia (ENG) :: Comparison of Java and C++"
+target "http://en.wikipedia.org/wiki/Comparison_of_Java_and_C%2B%2B"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Scharakteryzować wybrane środowisko programistyczne języka Java.
- 
+Scharakteryzować wybrane środowisko programistyczne języka C++
+\end_layout
+
+\begin_layout Section*
+Borland
+\end_layout
+
+\begin_layout Section*
+Eclipse
+\end_layout
+
+\begin_layout Section*
+Visual Studio
+\end_layout
+
+\begin_layout Section*
+DEV C++
+\end_layout
+
+\begin_layout Itemize
+wbudowany kompilator
+\end_layout
+
+\begin_layout Itemize
+wbudowany debuger
+\end_layout
+
+\begin_layout Itemize
+kontrola wersji
+\end_layout
+
+\begin_layout Itemize
+edytor kodu
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+podświetlenie składni
+\end_layout
+
+\begin_layout Itemize
+podpowiedzi
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+tworzenie zasobów programu
+\end_layout
+
+\begin_layout Itemize
+tworzenie baz danych
+\end_layout
+
+\begin_layout Itemize
+tworzenie komponentów
 \end_layout
 
 \begin_layout Section
-Omówić dwa wybrane algorytmy sortowania.
- 
+Scharakteryzować wybrane środowisko programistyczne języka Java
+\end_layout
+
+\begin_layout Standard
+Eclipse bądź Netbeans.
+ Tak samo jak w 9.
+\end_layout
+
+\begin_layout Standard
+Tylko nie wiem co tu opowiadać :/
+\end_layout
+
+\begin_layout Section
+Omówić dwa wybrane algorytmy sortowania
 \end_layout
 
 \begin_layout Section*
@@ -474,12 +756,118 @@ Polega na porównywaniu dwóch kolejnych elementów i zamianie ich kolejności,
 
 \begin_layout Section
 Wyjaśnić zasady działania instrukcji warunkowej i instrukcji pętli w wybranym
- języku programowania.
+ języku programowania
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset CommandInset href
+LatexCommand href
+name "Wikipedia :: Instrukcja warunkowa"
+target "http://pl.wikipedia.org/wiki/Instrukcja_warunkowa#If-Then"
+
+\end_inset
+
  
+\begin_inset CommandInset href
+LatexCommand href
+name "Wikipedia :: Pętla"
+target "http://pl.wikipedia.org/wiki/P%C4%99tla_(informatyka)"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podstawowym rodzajem instrukcji warunkowej jest If-Then.
+ Jest spotykany w większości języków programowania i umożliwia warunkowe
+ wykonanie określonego bloku kodu, a jeśli warunek nie jest spełniony –
+ alternatywnego bloku.
+ Pomiędzy językami występują nieznaczne różnice składniowe, ale ogólny schemat
+ w pseudokodzie zawsze wygląda następująco:
+\end_layout
+
+\begin_layout Quotation
+if warunek then
+\end_layout
+
+\begin_layout Quotation
+właściwy blok kodu
+\end_layout
+
+\begin_layout Quotation
+else
+\end_layout
+
+\begin_layout Quotation
+alternatywny blok kodu
+\end_layout
+
+\begin_layout Quotation
+end if
+\end_layout
+
+\begin_layout Standard
+Na początku wykonywana jest ewaluacja warunku podanego w postaci wyrażenia
+ logicznego.
+ Jeśli wynikiem jest true, wykonywany jest właściwy blok kodu, a jeśli false
+ – alternatywny.
+ Następnie program kontynuuje od pierwszej komendy po end if.
+\end_layout
+
+\begin_layout Standard
+Wiele języków programowania umożliwia zdefiniowanie więcej niż jednego warunku
+ do sprawdzenia przy pomocy opcjonalnego bloku else-if:
+\end_layout
+
+\begin_layout Quotation
+if warunek 1 then
+\end_layout
+
+\begin_layout Quotation
+pierwszy blok kodu
+\end_layout
+
+\begin_layout Quotation
+else-if warunek 2 then
+\end_layout
+
+\begin_layout Quotation
+drugi blok kodu
+\end_layout
+
+\begin_layout Quotation
+else-if warunek 3 then
+\end_layout
+
+\begin_layout Quotation
+trzeci blok kodu
+\end_layout
+
+\begin_layout Quotation
+else
+\end_layout
+
+\begin_layout Quotation
+alternatywny blok kodu
+\end_layout
+
+\begin_layout Quotation
+end if
+\end_layout
+
+\begin_layout Standard
+W tym wypadku warunki ewaluowane są po kolei do momentu, gdy któryś z nich
+ nie da wartości true – wykonywany jest wtedy przypisany mu blok kodu.
+ Jeśli żaden z warunków nie będzie prawdziwy, wykonywany jest blok alternatywny.
+ Bez względu na ilość prawdziwych warunków, zawsze wykona się tylko pierwszy
+ z nich, a pozostałe zostaną pominięte.
 \end_layout
 
 \begin_layout Section
-Scharakteryzować wybrany język skryptowy.
+Scharakteryzować wybrany język skryptowy
 \end_layout
 
 \begin_layout Section*
@@ -710,8 +1098,7 @@ convention over configuration
 \end_layout
 
 \begin_layout Section
-Omówić system stron WWW.
- 
+Omówić system stron WWW
 \end_layout
 
 \begin_layout Section
@@ -719,12 +1106,69 @@ Scharakteryzować zasady instalacji i administrowania serwerami internetowymi.
  
 \end_layout
 
-\begin_layout Standard
-WTF?
+\begin_layout Itemize
+bezpieczeństwo fizyczne komputera
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+zasilanie
+\end_layout
+
+\begin_layout Itemize
+chłodzenie
+\end_layout
+
+\begin_layout Itemize
+RAID
+\end_layout
+
+\begin_layout Itemize
+kontrola fizycznego dostępu
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+izolacja procesów - user, chroot...
+\end_layout
+
+\begin_layout Itemize
+minimalna ilość usług
+\end_layout
+
+\begin_layout Itemize
+firewall
+\end_layout
+
+\begin_layout Itemize
+monitoring
+\end_layout
+
+\begin_layout Itemize
+logowanie
 \end_layout
 
 \begin_layout Section
-Porównać systemy operacyjne klasy Windows i Unix.
+Porównać systemy operacyjne klasy Windows i Unix 
+\end_layout
+
+\begin_layout Standard
+Wywodzą się z innych środowisk i zastosowań.
+\end_layout
+
+\begin_layout Standard
+- desktop PC
+\end_layout
+
+\begin_layout Standard
+- serwery obsługujące wielu użytkowników na raz na sprzęcie 
+\begin_inset Quotes eld
+\end_inset
+
+mainframe
+\begin_inset Quotes erd
+\end_inset
+
  
 \end_layout
 
@@ -965,8 +1409,27 @@ Pracę rozpoczynamy od wstępnych wymagań i planowania projektu, następnie
 \end_layout
 
 \begin_layout Section
-Omówić etapy tworzenia systemu informatycznego.
- 
+Omówić etapy tworzenia systemu informatycznego
+\end_layout
+
+\begin_layout Enumerate
+Specyfikacja wymagań
+\end_layout
+
+\begin_layout Enumerate
+Projektowanie
+\end_layout
+
+\begin_layout Enumerate
+Implementacja
+\end_layout
+
+\begin_layout Enumerate
+Testowanie
+\end_layout
+
+\begin_layout Enumerate
+Wdrożenie i pielęgnacja
 \end_layout
 
 \begin_layout Section
@@ -1076,8 +1539,289 @@ Integralność to ograniczenie nakładane na bazę danych przez model relacyjny.
 \end_layout
 
 \begin_layout Section
-Język baz danych SQL.
- 
+Język baz danych SQL
+\end_layout
+
+\begin_layout Standard
+Użycie SQL, zgodnie z jego nazwą, polega na zadawaniu zapytań do bazy danych.
+ Zapytania można zaliczyć do jednego z czterech głównych podzbiorów:
+\end_layout
+
+\begin_layout Standard
+SQL DML (ang.
+ Data Manipulation Language – „język manipulacji danymi”),
+\end_layout
+
+\begin_layout Standard
+SQL DDL (ang.
+ Data Definition Language – „język definicji danych”),
+\end_layout
+
+\begin_layout Standard
+SQL DCL (ang.
+ Data Control Language – „język kontroli nad danymi”).
+\end_layout
+
+\begin_layout Standard
+SQL DQL (ang.
+ Data Query Language – „język definiowania zapytań”).
+\end_layout
+
+\begin_layout Standard
+Instrukcje SQL w obrębie zapytań tradycyjnie zapisywane są wielkimi literami,
+ jednak nie jest to wymóg.
+ Każde zapytanie w SQL-u musi kończyć się znakiem średnika (;).
+\end_layout
+
+\begin_layout Standard
+Dodatkowo, niektóre programy do łączenia się z silnikiem bazy danych (np.
+ psql w przypadku PostgreSQL), używają swoich własnych instrukcji, spoza
+ standardu SQL, które służą np.
+ do połączenia się z bazą, wyświetlenia dokumentacji itp.
+\end_layout
+
+\begin_layout Subsection
+DML
+\end_layout
+
+\begin_layout Standard
+DML (Data Manipulation Language) służy do wykonywania operacji na danych
+ – do ich umieszczania w bazie, kasowania, przeglądania oraz dokonywania
+ zmian.
+ Najważniejsze polecenia z tego zbioru to:
+\end_layout
+
+\begin_layout Standard
+INSERT – umieszczenie danych w bazie,
+\end_layout
+
+\begin_layout Standard
+UPDATE – zmiana danych,
+\end_layout
+
+\begin_layout Standard
+DELETE – usunięcie danych z bazy.
+\end_layout
+
+\begin_layout Standard
+Dane tekstowe muszą być zawsze ujęte w znaki pojedynczego cudzysłowu (').
+\end_layout
+
+\begin_layout Subsection
+DDL
+\end_layout
+
+\begin_layout Standard
+Dzięki DDL (Data Definition Language) można operować na strukturach, w których
+ dane są przechowywane – czyli np.
+ dodawać, zmieniać i kasować tabele lub bazy.
+ Najważniejsze polecenia tej grupy to:
+\end_layout
+
+\begin_layout Standard
+CREATE (np.
+ CREATE TABLE, CREATE DATABASE, ...) – utworzenie struktury (bazy, tabeli,
+ indeksu itp.),
+\end_layout
+
+\begin_layout Standard
+DROP (np.
+ DROP TABLE, DROP DATABASE, ...) – usunięcie struktury,
+\end_layout
+
+\begin_layout Standard
+ALTER (np.
+ ALTER TABLE ADD COLUMN ...) – zmiana struktury (dodanie kolumny do tabeli,
+ zmiana typu danych w kolumnie tabeli).
+\end_layout
+
+\begin_layout Subsection
+DCL
+\end_layout
+
+\begin_layout Standard
+DCL (Data Control Language) ma zastosowanie do nadawania uprawnień do obiektów
+ bazodanowych.
+ Najważniejsze polecenia w tej grupie to:
+\end_layout
+
+\begin_layout Standard
+GRANT - służące do nadawania uprawnień do pojedynczych obiektów lub globalnie
+ konkretnemu użytkownikowi (np.
+ GRANT ALL PRIVILEGES ON EMPLOYEE TO PIOTR WITH GRANT OPTION – przyznanie
+ wszystkich praw do tabeli EMPLOYEE użytkownikowi PIOTR z opcją pozwalającą
+ mu nadawać prawa do tej tabeli).
+\end_layout
+
+\begin_layout Standard
+REVOKE – służące do odbierania wskazanych uprawnień konkretnemu użytkownikowi
+ (np.
+ REVOKE ALL PRIVILEGES ON EMPLOYEE FROM PIOTR - odebranie użytkownikowi
+ wszystkich praw do tabeli EMPLOYEE).
+\end_layout
+
+\begin_layout Standard
+DENY.
+\end_layout
+
+\begin_layout Subsection
+DQL
+\end_layout
+
+\begin_layout Standard
+DQL (Data Query Language) to język formułowania zapytań do bazy danych.
+ W zakres tego języka wchodzi jedno polecenie - SELECT.
+ Często SELECT traktuje się jako część języka DML, ale to podejście nie
+ wydaje się właściwe, ponieważ DML z definicji służy do manipulowania danymi
+ - ich tworzenia, usuwania i uaktualniania.
+\end_layout
+
+\begin_layout Standard
+Na pograniczu obu języków znajduje się polecenie SELECT INTO, które dodatkowo
+ modyfikuje (przepisuje, tworzy) dane.
+\end_layout
+
+\begin_layout Subsection
+Przykładowe zapytania
+\end_layout
+
+\begin_layout Standard
+Przykłady użycia wyżej wymienionych rodzajów zapytań:
+\end_layout
+
+\begin_layout Standard
+SELECT *
+\end_layout
+
+\begin_layout Standard
+FROM pracownicy
+\end_layout
+
+\begin_layout Standard
+WHERE pensja > 2000
+\end_layout
+
+\begin_layout Standard
+ORDER BY staz DESC;
+\end_layout
+
+\begin_layout Standard
+Zwraca tabelę (listę) utworzoną ze wszystkich kolumn (*) tabeli „pracownicy”
+ (FROM pracownicy) zawierającą pracowników, których pensja jest większa
+ niż 2000 (WHERE pensja > 2000) i sortuje wynik malejąco według parametru
+ staz (ORDER BY staz DESC).
+\end_layout
+
+\begin_layout Standard
+INSERT INTO pracownicy
+\end_layout
+
+\begin_layout Standard
+(imie, nazwisko, pensja, staz)
+\end_layout
+
+\begin_layout Standard
+VALUES
+\end_layout
+
+\begin_layout Standard
+('Jan', 'Kowalski', 5500, 1);
+\end_layout
+
+\begin_layout Standard
+Dodaje do tabeli „pracownicy” (INTO pracownicy) wiersz (rekord) zawierający
+ dane pojedynczego pracownika.
+\end_layout
+
+\begin_layout Standard
+UPDATE pracownicy
+\end_layout
+
+\begin_layout Standard
+SET pensja = pensja * 1.1
+\end_layout
+
+\begin_layout Standard
+WHERE staz > 2;
+\end_layout
+
+\begin_layout Standard
+Podwyższa o 10% pensję (SET pensja = pensja * 1.1) pracownikom, których staż
+ jest większy niż 2 (np.
+ lata).
+\end_layout
+
+\begin_layout Standard
+DELETE FROM pracownicy
+\end_layout
+
+\begin_layout Standard
+WHERE imie = 'Jan' AND nazwisko = 'Kowalski';
+\end_layout
+
+\begin_layout Standard
+Usuwa z tabeli „pracownicy” wszystkie wiersze (rekordy) dotyczące pracownika
+ o imieniu „Jan” i nazwisku „Kowalski” (czyli takie, w których pole "imię"
+ ma wartość Jan, a pole "nazwisko" – Kowalski).
+\end_layout
+
+\begin_layout Standard
+CREATE TABLE pracownicy
+\end_layout
+
+\begin_layout Standard
+(
+\end_layout
+
+\begin_layout Standard
+imie VARCHAR(255), 
+\end_layout
+
+\begin_layout Standard
+nazwisko VARCHAR(255), 
+\end_layout
+
+\begin_layout Standard
+pensja FLOAT,
+\end_layout
+
+\begin_layout Standard
+staz INT
+\end_layout
+
+\begin_layout Standard
+);
+\end_layout
+
+\begin_layout Standard
+Tworzy tabelę „pracownicy” zawierającą pola tekstowe zmiennej długości (varchar)
+ o nazwach „imie” (imię) i „nazwisko”, o maksymalnej długości 255 znaków,
+ zapisaną za pomocą liczby rzeczywistej (float od ang.
+ floating point) pensję oraz zapisany za pomocą liczby całkowitej (int od
+ ang.
+ integer) staż.
+\end_layout
+
+\begin_layout Standard
+DROP TABLE pracownicy;
+\end_layout
+
+\begin_layout Standard
+Usuwa z bazy tabelę „pracownicy”.
+\end_layout
+
+\begin_layout Standard
+ALTER TABLE pracownicy
+\end_layout
+
+\begin_layout Standard
+ADD dzial VARCHAR(255);
+\end_layout
+
+\begin_layout Standard
+Dodaje do struktury tabeli „pracownicy” kolumnę „dzial” (dział), jako pole
+ tekstowe o długości maks.
+ 255 bajtów.
 \end_layout
 
 \begin_layout Section
@@ -1172,8 +1916,68 @@ http://pl.wikipedia.org/wiki/System_zarządzania_relacyjną_bazą_danych
 \end_layout
 
 \begin_layout Section
-Diagram związków encji.
- 
+Diagram związków encji
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "Wikipedia :: Diagram związków encji"
+target "http://pl.wikipedia.org/wiki/P%C4%99tla_(informatyka)"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Diagram związków encji lub Diagram ERD (od ang.
+ Entity-Relationship Diagram) – rodzaj graficznego przedstawienia związków
+ pomiędzy encjami używany w projektowaniu systemów informacyjnych do przedstawie
+nia konceptualnych modeli danych używanych w systemie.
+\end_layout
+
+\begin_layout Standard
+Systemy CASE, które wspierają tworzenia tych diagramów, mogą na ich podstawie
+ automatycznie tworzyć bazy danych odpowiadające relacjom na diagramie.
+\end_layout
+
+\begin_layout Standard
+Diagram pokazuje logiczne związki pomiędzy różnymi encjami, związki te mają
+ dwie cechy:
+\end_layout
+
+\begin_layout Standard
+Opcjonalność – która mówi o tym, czy każda encja musi, czy też może wystąpić
+ równocześnie z inną.
+ Np.
+ TOWAR musi zostać zakupiony przez co najmniej jednego KLIENTA, ale KLIENT
+ może być nabywcą TOWARU.
+ W reprezentacji graficznej linia przerywana oznacza opcjonalność związku,
+ natomiast ciągła wymóg związku.
+\end_layout
+
+\begin_layout Standard
+Krotność – określającą ile encji wchodzi w skład związku:
+\end_layout
+
+\begin_layout Standard
+1:1 ("jeden do jeden") – encji odpowiada dokładnie jedna encja,
+\end_layout
+
+\begin_layout Standard
+1:N ("jeden do wielu") – encji odpowiada jedna lub więcej encji,
+\end_layout
+
+\begin_layout Standard
+M:N ("wiele do wielu") – jednej lub więcej encjom odpowiada jedna lub więcej
+ encji.
+\end_layout
+
+\begin_layout Standard
+W przypadku związków M:N często stosuje się normalizację diagramu, która
+ polega na dodaniu encji pośredniczącej i zastąpienie związku M:N dwoma
+ związkami 1:N z nową encją.
 \end_layout
 
 \begin_layout Section
@@ -1313,8 +2117,28 @@ Czwarta i piąta postać normalna są w zasadzie używane wyłącznie przy okazj
 \end_layout
 
 \begin_layout Section
-Narzędzia typu CASE.
+Narzędzia typu CASE
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset CommandInset href
+LatexCommand href
+name "Wikipedia :: CASE"
+target "http://pl.wikipedia.org/wiki/P%C4%99tla_(informatyka)"
+
+\end_inset
+
  
+\begin_inset CommandInset href
+LatexCommand href
+name "Wikipedia :: Narzędzia UML"
+target "http://pl.wikipedia.org/wiki/Lista_narz%C4%99dzi_UML"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1583,8 +2407,59 @@ Warstwa łącza danych jest czasami nazywana warstwą liniową lub kanałową.
 \end_layout
 
 \begin_layout Section
-Przedstawić klasyfikację sieci komputerowych.
- 
+Przedstawić klasyfikację sieci komputerowych
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "Lan networks"
+target "http://lan-networks.cba.pl/Klasyfikacja.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Podział sieci ze względu na obejmowany obszar:
+\end_layout
+
+\begin_layout Itemize
+lokalna sieć (LAN - Local Area Network) - łączy stacje robocze na niewielkim
+ obszarze(pomieszczenie, piętro, budynek), charakteryzuje się niskimi kosztami
+ eksploatacji oraz dołączania kolejnych komputerów oraz prostym oprogramowaniem.
+\end_layout
+
+\begin_layout Itemize
+sieć kampusowa (Campus Network) - obejmuje zasięgiem kilka budynków na terenie
+ uczelni, firmy lub osiedla.
+\end_layout
+
+\begin_layout Itemize
+miejska sieć (MAN - Metropolitan Area Network)- integruje sieci LAN na obszarze
+ całego miasta , oparta jest na laczach o duzej przepustowości np.
+ na światłowodach.
+\end_layout
+
+\begin_layout Itemize
+rozległa sieć (WAN - Wide Area network) - łączy wiele sieci typu MAN i WAN
+ na dużych terenach geograficznych np.
+ region, państwo, kontynent.
+ Wykorzystuje publiczną sieć telekomunikacyjną ale w wielu przypadkach również
+ kanały satelitarne lub radiowe.
+\end_layout
+
+\begin_layout Itemize
+sieć radiowa (Radio Network) sieć do której łączenia nie korzysta się z
+ przewodów, do każdej stacji dołączany jest nadajnik - odbiornik, zasięg
+ takich sieć jest być uwarunkowany mocą nadajniko-odbiorników
+\end_layout
+
+\begin_layout Itemize
+sieć satelitarna (Satellite Network) sieć, w której sygnały przekazywane
+ są ze stacji naziemnej do satelity i z satelity do innej stacji naziemnej,
+ sygnał jest wzmacniany w Satelicie.
 \end_layout
 
 \begin_layout Section
