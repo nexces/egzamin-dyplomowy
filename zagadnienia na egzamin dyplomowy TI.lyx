@@ -642,6 +642,26 @@ target "http://en.wikipedia.org/wiki/Comparison_of_Java_and_C%2B%2B"
 
 \end_layout
 
+\begin_layout Itemize
+Brak refleksji w C++
+\end_layout
+
+\begin_layout Itemize
+Kompilacja do natywnego kodu a maszyna wirtualna i bajtkod
+\end_layout
+
+\begin_layout Itemize
+C++ wymaga ręcznego zarządzania pamięcią a w Javie jest GC
+\end_layout
+
+\begin_layout Itemize
+Java wymaga stosowania JNI do dostępu do natywnych bibliotek
+\end_layout
+
+\begin_layout Itemize
+...
+\end_layout
+
 \begin_layout Section
 Scharakteryzować wybrane środowisko programistyczne języka C++
 \end_layout
@@ -1853,8 +1873,11 @@ ALTER (np.
 \end_layout
 
 \begin_layout Section
-Zapytania wybierające SQL.
- 
+Zapytania wybierające SQL
+\end_layout
+
+\begin_layout Standard
+Patrz wyżej DQL.
 \end_layout
 
 \begin_layout Section
@@ -2585,8 +2608,34 @@ Program może być używany jako filtr pakietów, bądź tzw.
 \end_layout
 
 \begin_layout Section
-Scharakteryzować politykę bezpieczeństwa w systemach komputerowych.
- 
+Scharakteryzować politykę bezpieczeństwa w systemach komputerowych
+\end_layout
+
+\begin_layout Standard
+Środki do zabezpieczania systemów informacyjnych i sieci:
+\end_layout
+
+\begin_layout Itemize
+Techniczne: kopie zapasowe, odtwarzanie po awariach, konfiguracja systemu
+ operacyjnego i baz danych, aktualizacja oprogramowania, itp.,
+\end_layout
+
+\begin_layout Itemize
+Kryptograficzne: poufność, integralność, niemożność zaprzeczenia.
+\end_layout
+
+\begin_layout Itemize
+Kryptograficzne i systemowe: autoryzacja, audyt, uwierzytelnianie.
+\end_layout
+
+\begin_layout Itemize
+Kryptograficzne, protokolarne, usługowe: śluzy ogniowe, tunelowanie, zabezpiecze
+nia sieci TCP/IP: IP i IPSEC, SSL/TSL, https, ssh, itp.
+\end_layout
+
+\begin_layout Itemize
+Uwierzytelnianie i identyfikacja w sieciach: karty inteligentne, KERBEROS,
+ DCE, SESAME, i inne.
 \end_layout
 
 \begin_layout Section
@@ -2697,13 +2746,17 @@ W bezpieczeństwie teleinformatycznym ochrona integralności zapobiega celowej
 \end_layout
 
 \begin_layout Standard
-???
+System przechowuje historię operacji dokonywanych przez użytkowników.
+ 
 \end_layout
 
 \begin_layout Section
-Scharakteryzować komponenty zintegrowanych programów bezpieczeństwa w systemach
- komputerowych.
- 
+[TODO] Scharakteryzować komponenty zintegrowanych programów bezpieczeństwa
+ w systemach komputerowych
+\end_layout
+
+\begin_layout Standard
+WTF?
 \end_layout
 
 \begin_layout Section
@@ -2869,8 +2922,197 @@ Polityka bezpieczeństwa to kontrola dostępu do realizacji operacji typu
 \end_layout
 
 \begin_layout Section
-Porównanie kryptografii symetrycznej i asymetrycznej.
- 
+Porównanie kryptografii symetrycznej i asymetrycznej
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle" tabularwidth="90text%">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cecha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Symetryczne
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Asymetryczne
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Klucz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ten sam klucz do szyfrowania i deszyfrowania
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+jeden klucz do szyfrowania, a inny (drugi do pary) do deszyfracji 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Długość klucza
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+typowo: 112-128 bitów
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+do 4096 bitów i niekiedy więcej
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Szybkość szyfrowania
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dziesiątki Gb/s, a kilkaset razy wolniej dla realizacji programowych
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100-1000 razy wolniej od realizacji programowych dla alg.
+ symetrycznych
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Podstawy teoretyczne
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+szyfry podstawieniowe i przestawieniowe, przekształcenia jednokierunkowe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+arytmetyka modulo n, logarytmy dyskretne i inne problemy obliczeniowe NP-zupełne
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Główne zastosowania
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+zabezpieczanie łączy komunikacyjnych, transmisja danych i uwierzytelnianie
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+podpisy cyfrowe, wymiana i dystrybucja kluczy do transmisji danych (symetrycznyc
+h), uwierzytelnianie, gotówka cyfrowa, podpisywanie kontraktów i inne protokoły
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2900,8 +3142,199 @@ Matematyczny sposób potwierdzania autentyczności cyfrowego dokumentu.
 \end_layout
 
 \begin_layout Section
-Charakterystyka protokołów uwierzytelniania.
- 
+Charakterystyka protokołów uwierzytelniania
+\end_layout
+
+\begin_layout Itemize
+w jakim celu stosujemy:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+chroni dokument przed podrobieniem,
+\end_layout
+
+\begin_layout Itemize
+TTP może ocenić i zadecydować o ważności dokumentu (metody symetryczne).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+2 podstawowe sposoby:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+symetryczne - w obrębie grupy osób, które sobie ufają,
+\end_layout
+
+\begin_layout Itemize
+asymetryczne (za pomocą podpisów cyfrowych).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Uwierzytelnianie symetryczne - technologia: wiarygodność źródła (pochodzenia)
+ informacji jest zastępowana przez obliczenie skrótu informacji i kryptograficzn
+ą ochronę tego skrótu - możliwości:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+utajnienie algorytmu skrótu albo
+\end_layout
+
+\begin_layout Itemize
+utajnienie wartości skrótu albo
+\end_layout
+
+\begin_layout Itemize
+autentyczność wartości skrótu (nie jest to klasyczny podpis).
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+uwierzytelnianie symetryczne
+\end_layout
+
+\begin_layout Itemize
+Podstawowy protokół symetryczny:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A wysyła do B: M, EK(H(M)), gdzie: K – klucz współdzielony przez A i B,
+ H(M) – skrót wiadomości M,
+\end_layout
+
+\begin_layout Itemize
+B oblicza z M skrót H(M) i porównuje z DK(EK(H(M)));
+\begin_inset Newline newline
+\end_inset
+
+jeśli oba skróty są zgodne, to wiadomość jest autentyczna (wiarygodna).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Obliczanie skrótu wiadomości - podstawowe techniki:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+MDC - Message Digest Cipher - funkcje skrótu bezkluczowe - muszą być dobrej
+ jakości;
+\end_layout
+
+\begin_layout Itemize
+MAC - Message Authentication Code - skrót z tajnym kluczem K może być wytworzony
+ przez kogoś, kto zna K.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+nie wolno stosować tego samego klucza do MAC i do szyfrowania danych!!!
+\end_layout
+
+\begin_layout Itemize
+jako funkcji skrótu można użyć:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+dowolnego dobrego szyfru blokowego w trybie np.
+ CBC z wektorem inicjalnym IV=0, bo obliczamy skrót!
+\end_layout
+
+\begin_layout Itemize
+inne popularne algorytmy MAC to:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+CBC-MAC (DES w trybie CBC - MAC to 32 pierwsze bity wyniku)
+\end_layout
+
+\begin_layout Itemize
+HMAC: h(( K+p2 ), h(( K+p1 ), x), gdzie pi to ustalone łańcuchy, h to np.
+ funkcja RIPEMD-160
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+W przypadku MDC skrót jest szyfrowany za pomocą klucza tajnego (współdzielonego
+ przez grupę użytkowników lub przez użytkownika i TTP) dla algorytmu symetryczne
+go.
+ Dla MAC może jeszcze wystąpić dodatkowe szyfrowanie, ale nie musi.
+\end_layout
+
+\begin_layout Itemize
+Problemy - ograniczone zastosowania, duża liczba kluczy
+\end_layout
+
+\begin_layout Subsection
+uwierzytelnianie asymetryczne
+\end_layout
+
+\begin_layout Itemize
+Podstawowa technika - podpisy cyfrowe.
+ Zasadniczo nie podpisuje się całych wiadomości, Dlaczego?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+czas realizacji podpisu,
+\end_layout
+
+\begin_layout Itemize
+możliwość ataków, gdy podpisywane wiadomości są krótkie (RSA).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Realizacja podpisu Alice:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+S A = E Kp (H(M)); do wysłania dodatkowo można go zaszyfrować razem z wiadomości
+ą  ( Kp to klucz prywatny Alice); ale na ogół wysyłamy: M, SA
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pytanie: jak weryfikujemy podpis? (co musi zrobić Bob, aby sprawdzić poprawność
+ podpisu?) Czego używamy? Jaka jest ewentualna rola TTP?
+\end_layout
+
+\begin_layout Itemize
+Problemy:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+zarządzanie kluczami publicznymi,
+\end_layout
+
+\begin_layout Itemize
+słabości niektórych algorytmów.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Stosowane algorytmy: RSA (1978), ElGamal(1985), DSA(1994)
+\end_layout
+
+\begin_layout Itemize
+Przyszłość: algorytmy oparte na logarytmie dyskretnym w obrębie grupy krzywych
+ eliptycznych w ciele Galois GF(p),
+\end_layout
+
+\begin_layout Itemize
+Zaleta: krótsze klucze - ok.
+ 200 bitów w stos.
+ do 1024 (RSA)
 \end_layout
 
 \begin_layout Section
@@ -2968,8 +3401,92 @@ Przezroczystość (ang.
 \end_layout
 
 \begin_layout Section
-Scharakteryzować przykładowe architektury systemów rozproszonych.
- 
+Scharakteryzować przykładowe architektury systemów rozproszonych
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+https://docs.google.com/viewer?a=v&q=cache:Hxl3mw6e9l8J:janek.ae.krakow.pl/~wiluszt/A
+E/SK/cwiczenia/cwicz02/sysrozp.pdf+&hl=pl&gl=pl&pid=bl&srcid=ADGEESg6Cd6RogQ3VVZ6
+KN3QVt_mycruht4ZKFXeo247dUWi7XG38ESkadu8QJ568wNh1vvTR2Ofxrd02s8D6V8Njr8yJdx_5Cz9
+JALxHGwyXGuRhRmaDJuxKAGdkJ0t6lAFd1hjPPpw&sig=AHIEtbR5uzsaK_cxyOkuBEGbAciwuaSohw
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Klient-serwer: rozproszony system ma wyróżniony węzeł zwany serwerem, oraz
+ szereg podłączonych do niego węzłów zwanych klientami.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Związek nie jest symetryczny: serwer wykonuje usługi zlecane przez klientów,
+ nie może im odmówić i nie może im zlecić wykonanie usług.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Klient-multi-serwer: podobnie jak dla architektury klient-serwer, ale istnieje
+ wiele serwerów, np.
+ WWW.
+\end_layout
+
+\begin_layout Description
+Koleżeńska (peer-to-peer, P2P): wiele węzłów świadczy sobie wzajemne usługi
+ poprzez bezpośrednie połączenie; nie ma wyraźnego podziału na usługodawców
+ i usługobiorców.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Np.
+ Gnutella, NXOR, Napster, Kazaa; JXTA jako narzędzie do P2P.
+\end_layout
+
+\begin_layout Itemize
+Komercyjny buzz dookoła P2P.
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Architektura
+\begin_inset space ~
+\end_inset
+
+oparta
+\begin_inset space ~
+\end_inset
+
+na
+\begin_inset space ~
+\end_inset
+
+oprogramowaniu
+\begin_inset space ~
+\end_inset
+
+pośredniczącym
+\begin_inset space ~
+\end_inset
+
+(middleware): nie występuje podział na klientów i serwery, np.
+ CORBA i WebServices.
+\end_layout
+
+\begin_layout Description
+Architektury
+\begin_inset space ~
+\end_inset
+
+gridowe: wirtualny komputer sumujący zasoby wielu komputerów w sposób przezroczy
+sty dla użytkowników.
 \end_layout
 
 \begin_layout Section
@@ -3041,7 +3558,28 @@ Obiekty zdalne rejestrowane są pod wybranymi nazwami w serwisie RMI Registry.
 \end_layout
 
 \begin_layout Section
-Omówić usługi nazewnicze i role rejestrów w systemach rozproszonych.
+Omówić usługi nazewnicze i role rejestrów w systemach rozproszonych
+\end_layout
+
+\begin_layout Standard
+To je to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+https://docs.google.com/viewer?a=v&q=cache:aDO_4hY_WRwJ:www.eti.pg.gda.pl/katedry/kask
+/pracownicy/Michal.Piotrowski/sr-pliki/wyklad02.pdf+&hl=pl&gl=pl&pid=bl&srcid=ADGE
+ESjOBQumrjyD-YSwtzguaCcxZswJGRuuFomMYqXJmmXiMRwVS9ekha2zNRZHtldh8t_j1LNF00VdDZAQ
+5cyZ884by9nvbVDCWJ8WRyuCX8MfAsDhhHrEG9pvtzoOgOd9DP-lwEsv&sig=AHIEtbRzxNNjCrBOLpO
+51NcKkza3juxWZQ
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3058,10 +3596,6 @@ Java
 
 \begin_layout Section*
 C#
-\end_layout
-
-\begin_layout Section*
-ASP
 \end_layout
 
 \begin_layout Section*
@@ -3089,7 +3623,7 @@ ColdFusion
 \end_layout
 
 \begin_layout Section*
-VB.NET
+Visual Basic
 \end_layout
 
 \begin_layout Section*
@@ -3109,8 +3643,37 @@ Clojure
 \end_layout
 
 \begin_layout Section
-Scharakteryzować język PHP.
+Scharakteryzować język PHP
+\end_layout
+
+\begin_layout Standard
+Wykonywany po stronie serwera.
+\end_layout
+
+\begin_layout Standard
+Nie posiada kompilatora, ani maszyny wirtualnej, tylko intepreter.
  
+\end_layout
+
+\begin_layout Standard
+Tylko interpreter może wykonać skrypt.
+\end_layout
+
+\begin_layout Standard
+Nie jest typowany statycznie, ale można sprawdzać typy i rzutować.
+\end_layout
+
+\begin_layout Standard
+GC po zakończeniu skryptu.
+\end_layout
+
+\begin_layout Standard
+Zaczynał jako język strukturalny, pełną obiektowość osiągnął w wersji 5.
+\end_layout
+
+\begin_layout Standard
+Od wersji 5.3 posiada wsparcie dla programowania funkcyjnego (wyrażenia lambda
+ i funkcje anonimowe)
 \end_layout
 
 \begin_layout Section
@@ -3315,8 +3878,47 @@ Umożliwia przełączenie punktu wykonywania kodu do innego miejsca programu.
 \end_layout
 
 \begin_layout Section
-Scharakteryzować język JavaScript.
- 
+Scharakteryzować język JavaScript
+\end_layout
+
+\begin_layout Standard
+Wykorzystywany przede wszystkim na stronach.
+\end_layout
+
+\begin_layout Standard
+Język imperatywny z wieloma elementami jeżyka strukturalnego.
+\end_layout
+
+\begin_layout Standard
+Wykonywany po stronie klienta (przeglądarki).
+\end_layout
+
+\begin_layout Standard
+Oparty o zdarzenia, tzn.
+ funkcjonuje tylko na zdarzeniach.
+\end_layout
+
+\begin_layout Standard
+W pełni obiektowy - wszystko jest obiektem (nawet prymitywy).
+\end_layout
+
+\begin_layout Standard
+Można dynamicznie definiować obietky oraz rozszerzać istniejące w oparciu
+ o prototypy.
+\end_layout
+
+\begin_layout Standard
+Nie jest typowany statycznie, ale można sprawdzać typy i rzutować, rzutowanie
+ poprzez odpowiednie funkcje.
+\end_layout
+
+\begin_layout Standard
+Zarządzanie pamięcią jest automatyczne.
+\end_layout
+
+\begin_layout Standard
+Funkcje mogą przyjmować nieokreśloną ilość parametrów niezależnie od deklaracji
+ funkcji.
 \end_layout
 
 \begin_layout Section
@@ -3324,12 +3926,94 @@ Omówić kolejne kroki obsługi technologii AJAX z wykorzystaniem PHP
 \end_layout
 
 \begin_layout Standard
-WTF??
+Obsługa XML w PHP? SimpleXML (parsuje do drzewa obiektowego), XMLReader/Writer.
+\end_layout
+
+\begin_layout Standard
+X_REQUESTED_WITH => XMLHttpRequest
+\end_layout
+
+\begin_layout Standard
+"HTTP_ACCEPT"=>"application/json, */*; q=0.01",
 \end_layout
 
 \begin_layout Section
-Wymienić i opisać funkcje i operatory stosowane w SQL/XML.
- 
+Wymienić i opisać funkcje i operatory stosowane w SQL/XML
+\end_layout
+
+\begin_layout Subsubsection*
+Funkcje
+\end_layout
+
+\begin_layout Itemize
+XMLElement – tworzy element XML z danych nie-XML
+\end_layout
+
+\begin_layout Itemize
+XMLForest – tworzy las elementów XML z danych nie-XML
+\end_layout
+
+\begin_layout Itemize
+XMLGen – tworzy element XML z wykorzystaniem szablonu
+\end_layout
+
+\begin_layout Itemize
+XMLConcat – tworzy las elementów przez konkatenację elementów XML wywiedzionych
+ z jednego wiersza relacji
+\end_layout
+
+\begin_layout Itemize
+XMLAgg – tworzy las elementów z kolekcji elementów XML wywiedzionych z różnych
+ wierszy relacji
+\end_layout
+
+\begin_layout Subsubsection*
+Operatory
+\end_layout
+
+\begin_layout Itemize
+existsNode().
+ This is used in the WHERE clause of a SQL statement to restrict the set
+ of documents returned by a query.
+ The existsNode() operator takes an XPath expression and applies it an XML
+ document.
+ The operator and returns true (1) or false (0) depending on whether or
+ not the document contains a node which matches the XPath expression.
+\end_layout
+
+\begin_layout Itemize
+extract().
+ This takes an XPath expression and returns the nodes that match the expression
+ as an XML document or fragment.
+ If only a single node matches the XPath expression, the result is a well-formed
+ XML document.
+ If multiple nodes match the XPath expression, the result is a document
+ fragment.
+\end_layout
+
+\begin_layout Itemize
+extractValue().
+ This takes an XPath expression and returns the corresponding leaf level
+ node.
+ The XPath expression passed to extractValue() should identify a single
+ attribute, or an element which has precisely one text node child.
+ The result is returned in the appropriate SQL data type.
+\end_layout
+
+\begin_layout Itemize
+updateXML().
+ This allows partial updates to be made to an XML document, based on a set
+ of XPath expressions.
+ Each XPath expression identifies a target node in the document, and a new
+ value for that node.
+ The updateXML() operator allows multiple updates to be specified for a
+ single XML document.
+\end_layout
+
+\begin_layout Itemize
+XMLSequence().
+ This makes it possible to expose the members of a collection as a virtual
+ table
 \end_layout
 
 \begin_layout Section
@@ -3432,8 +4116,165 @@ status open
 \end_layout
 
 \begin_layout Section
-Podać i omówić przykład schematu XML w XML Schema.
- 
+Podać i omówić przykład schematu XML w XML Schema
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+<?xml version="1.0"?>
+\end_layout
+
+\begin_layout Plain Layout
+
+<note
+\end_layout
+
+\begin_layout Plain Layout
+
+xmlns="http://www.w3schools.com"
+\end_layout
+
+\begin_layout Plain Layout
+
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+\end_layout
+
+\begin_layout Plain Layout
+
+xsi:schemaLocation="http://www.w3schools.com note.xsd">
+\end_layout
+
+\begin_layout Plain Layout
+
+  <to>Tove</to>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <from>Jani</from>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <heading>Reminder</heading>
+\end_layout
+
+\begin_layout Plain Layout
+
+  <body>Don't forget me this weekend!</body>
+\end_layout
+
+\begin_layout Plain Layout
+
+</note>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+<?xml version="1.0"?>
+\end_layout
+
+\begin_layout Plain Layout
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+\end_layout
+
+\begin_layout Plain Layout
+
+targetNamespace="http://www.w3schools.com"
+\end_layout
+
+\begin_layout Plain Layout
+
+xmlns="http://www.w3schools.com"
+\end_layout
+
+\begin_layout Plain Layout
+
+elementFormDefault="qualified">
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+<xs:element name="note">
+\end_layout
+
+\begin_layout Plain Layout
+
+  <xs:complexType>
+\end_layout
+
+\begin_layout Plain Layout
+
+    <xs:sequence>
+\end_layout
+
+\begin_layout Plain Layout
+
+      <xs:element name="to" type="xs:string"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+      <xs:element name="from" type="xs:string"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+      <xs:element name="heading" type="xs:string"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+      <xs:element name="body" type="xs:string"/>
+\end_layout
+
+\begin_layout Plain Layout
+
+    </xs:sequence>
+\end_layout
+
+\begin_layout Plain Layout
+
+  </xs:complexType>
+\end_layout
+
+\begin_layout Plain Layout
+
+</xs:element>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+</xs:schema>
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -3661,8 +4502,31 @@ status open
 \end_layout
 
 \begin_layout Section
-Scharakteryzować obsługę baz danych w PHP.
- 
+Scharakteryzować obsługę baz danych w PHP
+\end_layout
+
+\begin_layout Standard
+Istnieją implementacje dla większości popularnych baz danych i są to rozwiązania
+ oparte o funkcje.
+\end_layout
+
+\begin_layout Standard
+Wyjątkiem tutaj jest rozszerzenie MySQLi (imporoved mysql) które może być
+ wykorzystywane zarówno obiektowo jak i poprzez funkcje.
+ Połączenie jest reprezentowane przez obiekt.
+\end_layout
+
+\begin_layout Standard
+Do tej całej watachy dochodzi jeszcze PDO - PHP Data Objects - obiektowa
+ warstwa abstrakcji na większość popularnych baz danych.
+\end_layout
+
+\begin_layout Standard
+Wspiera ODBC.
+\end_layout
+
+\begin_layout Standard
+W PHP nie ma modelu O/R.
 \end_layout
 
 \begin_layout Section
@@ -3911,20 +4775,139 @@ Framework do realizacji warstwy dostępu do danych (ang.
 \end_layout
 
 \begin_layout Section
-Omówić metody zabezpieczania internetowych baz danych.
- 
+Omówić metody zabezpieczania internetowych baz danych
+\end_layout
+
+\begin_layout Standard
+Nie powinno się wystawiać bazy, a jedynie interfejs do niej (aplikacja).
+\end_layout
+
+\begin_layout Standard
+Firewall
+\end_layout
+
+\begin_layout Standard
+Niestandardowe nazwy użytkowników administracyjnych.
+\end_layout
+
+\begin_layout Standard
+Trudne hasła.
+\end_layout
+
+\begin_layout Standard
+Każda aplikacja powinna posiadać własnego użytkownika.
+\end_layout
+
+\begin_layout Standard
+Maksymalne ograniczenie uprawnień dla danego użytkownika.
+\end_layout
+
+\begin_layout Standard
+Używanie połączeń szyfrowanych (SSL).
+\end_layout
+
+\begin_layout Standard
+Stosuje się różne metody szyfrowania baz danych.
 \end_layout
 
 \begin_layout Section
 Scharakteryzować modele danych multimedialnych w systemach internetowych
 \end_layout
 
-\begin_layout Standard
-??
+\begin_layout Itemize
+Systemy komercyjne (Oracle, IBM DB2):
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+wykorzystanie rozszerzeń obiektowo-relacyjnych
+\end_layout
+
+\begin_layout Itemize
+rozwiązania firmowe dla metadanych sygnałowych
+\end_layout
+
+\begin_layout Itemize
+prawie brak wsparcia dla metadanych semantycznych
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Standardy:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+SQL/MM – model obiektowo-relacyjny; brak wsparcia dla metadanych semantycznych
+\end_layout
+
+\begin_layout Itemize
+MPEG-7 – reprezentacja wszystkich typów metadanych w postaci XML; na razie
+ słabe wsparcie przez systemy zarządzania bazą danych
+\end_layout
+
+\end_deeper
 \begin_layout Section
-Wymienić i omówić kolejne kroki wytwarzania witryn internetowych.
+Wymienić i omówić kolejne kroki wytwarzania witryn internetowych
+\end_layout
+
+\begin_layout Enumerate
+Planowanie
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+specyfikacja wymagań, czyli co chce klient
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Analiza
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+analiza wymagań i studium wykonalności, czyli co można faktycznie zrobić
+ i jak
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Projekt
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+projekt systemu, poszczególnych struktur, komponentów, modułów
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Implementacja
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+wytwarzanie kodu
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Testowanie
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+testowanie poszczególnych elementów systemu
+\end_layout
+
+\begin_layout Enumerate
+testowanie systemu w całości
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Wdrożenie i pielęgnacja
 \end_layout
 
 \begin_layout Section
@@ -3995,9 +4978,115 @@ Ze względu na zakres obowiązków, specjalistyczna wiedza typowego administrato
 \end_layout
 
 \begin_layout Section
-Charakterystyka infrastruktur klucza publicznego PKI.
+Charakterystyka infrastruktur klucza publicznego PKI
 \end_layout
 
+\begin_layout Standard
+Zarządzanie kluczami (PKI - Public Key Infrastructure) to zestaw sprzętu,
+ oprogramowania, ludzi i procedur potrzebnych do tworzenia, zarządzania,
+ dystrybucji, wykorzystania, przechowywania i unieważniania cyfrowych certyfikat
+ów.
+\end_layout
+
+\begin_layout Standard
+Obejmuje:
+\end_layout
+
+\begin_layout Itemize
+wytwarzanie kluczy,
+\end_layout
+
+\begin_layout Itemize
+poświadczanie (certyfikaty),
+\end_layout
+
+\begin_layout Itemize
+uzgadnianie (ustanawianie), wymiana,
+\end_layout
+
+\begin_layout Itemize
+stosowanie (dobór) i użytkowanie,
+\end_layout
+
+\begin_layout Itemize
+przechowywanie, w tym przekazywanie TTP i organom prawnym (escrow),
+\end_layout
+
+\begin_layout Itemize
+niszczenie i unieważnianie.
+\end_layout
+
+\begin_layout Standard
+PKI to infrastruktura pozwalająca na przypisanie klucza publicznego do podmiotu
+ za pośrednictwem urzędów poświadczających klucze publiczne (CA).
+\end_layout
+
+\begin_layout Itemize
+X.509
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+hierarchiczny system urzędów certyfikujących (CA)
+\end_layout
+
+\begin_layout Itemize
+tylko CA mogą podpisywać certyfikaty
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+PGP
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+sieć zaufania (web of trust)
+\end_layout
+
+\begin_layout Itemize
+wszyscy mogą podpisywać certyfikaty
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dystrybucja kluczy
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+PGP - Klucze jawne PGP typowo rozprowadza się pocztą elektroniczną, za pomocą
+ sieciowych biuletynów informacyjnych lub serwerów kluczy opartych na poczcie
+ elektronicznej.
+ W celu przeciwdziałania sabotażom klucze są podpisywane przez trzecie strony
+ - innych użytkowników.
+\end_layout
+
+\begin_layout Enumerate
+PEM - CA jest obdarzoną powszech-nym zaufaniem (TTP) bazą kluczy jawnych.
+ Klucze jawne PEM mogą być rozprowadzane za pomocą dowolnych środków, zwykle
+ pocztą elektroniczną lub za pomocą przeglądania katalogów zbudowanych w
+ oparciu o standard X.500.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Unieważnianie kluczy
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+PGP - Dystrybucja kluczy jest doraźna i w znacznej części na drodze ustnej.
+ W tej sytuacji niemożliwe jest zagwarantowanie unieważnienia certyfikatu,
+ jeżeli jest on skompromitowany.
+\end_layout
+
+\begin_layout Enumerate
+PEM - Listy unieważnień certyfikatów (CRL) są zachowane w katalogach typu
+ X.500 lub w skrzynkach pocztowych utrzymywanych przez każdy urząd typu PCA
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Protokół SSL/TSL i jego zastosowania
 \begin_inset Foot
@@ -4027,7 +5116,64 @@ Według modelu OSI, TLS działa w warstwie prezentacji, dzięki czemu może
 \end_layout
 
 \begin_layout Section
-Aktorzy i przebieg ataków typu DDoS.
+Aktorzy i przebieg ataków typu DDoS
+\end_layout
+
+\begin_layout Subsection
+Ataki DoS/DDoS mają dwa typy ofiar
+\end_layout
+
+\begin_layout Enumerate
+docelowa ofiara i 
+\end_layout
+
+\begin_layout Enumerate
+pośredniczące systemy, na których działają exploity I demony atakującego.
+\end_layout
+
+\begin_layout Enumerate
+administrator siecie botnet
+\end_layout
+
+\begin_layout Subsection
+Fazy ataku DDoS:
+\end_layout
+
+\begin_layout Enumerate
+Intruz wynajduje jeden lub więcej systemów w Internecie takich, że mogą
+ dać się skompromitować i zainstalować exploity intruza.
+ Najczęściej wykorzystuje do tego celu wykradzione dane legalnego użytkownika,
+ wybierając przy tym systemy z szerokopasmowym dostępem, np.
+ węzły akademickie.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Na skompromitowany system ładuje dowolną liczbę narzędzi hakerskich (np.
+ skanery, wykrywacze typu SO, programy Dos/DDoS).
+ Taki system staje się Masterem, który rozpoczyna poszukiwanie innych systemów
+ możliwych do skompromitowania.
+ Przeszukuje także systemy w sieci lokalnej pod katem uruchomionych usług,
+ wynajdując te z podatnościami (masowe wnikanie).
+ Automatyczne narzędzie do tej kompromitacji systemów nie są częścią narzędzi
+ DDoS, ale pochodzą najczęściej od innych grup hakerów.
+ Te skompromitowane systemy stają się początkowymi ofiarami DDoS – zostają
+ na nich uruchomione demony DDoS przeprowadzające właściwy atak.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Intruz dysponuje listą „posiadanych” systemów z demonami DDoS.
+ Właściwa faza DDoS zaczyna się, gdy na systemie Master zostaje uruchomiony
+ program, który komunikuje się z demonami, wydając polecenie rozpoczęcia
+ ataku.
+ Tę komunikację można tak ukryć, że staje się trudna do wykrycia, aczkolwiek
+ istnieją pewne dowody na to, występuje.
+ W większości przypadków administratorzy zaatakowanych systemów (demonów)
+ nawet nie podejrzewają, że demony DDoS w nich działają.
+ Nawet zostaną one zlokalizowane i usunięte, to nie można określić, gdzie
+ jeszcze znajduje się takie oprogramowanie.
+ 
 \end_layout
 
 \begin_layout Section
@@ -4097,7 +5243,104 @@ Problematyczna dystrybucja certyfikatów klienta
 \end_layout
 
 \begin_layout Section
-Na czym polega bezpieczeństwo usługi znakowania czasem? 
+Na czym polega bezpieczeństwo usługi znakowania czasem?
+\end_layout
+
+\begin_layout Standard
+Bezpieczeństwo notariatu opiera się na podpisie złożonym przez zaufaną instytucj
+ę, stwierdzającym, że dany dokument rzeczywiście istniał o danym czasie
+ i na braku możliwości zafałszowania informacji o dacie, zmiany treści,
+ czy przeniesienia podpisu na inny dokument.
+ 
+\end_layout
+
+\begin_layout Itemize
+Użytkownik wysyła skrót wiadomości do notariatu cyfrowego.
+ 
+\end_layout
+
+\begin_layout Itemize
+Na serwerze notariatu gromadzone są skróty dokumentów przesłane w tej samej
+ sekundzie od różnych klientów.
+ 
+\end_layout
+
+\begin_layout Itemize
+Na ich podstawie budowany jest łączny skrót wielu dokumentów z tej samej
+ sekundy, ten dodawany jest do sumy skrótów bazowych w tzw Super skrót bazowy
+ (SHV super hash value) z poprzedniej sekundy dając nowy skrót dla danej
+ sekundy.
+ 
+\end_layout
+
+\begin_layout Itemize
+Takie rozwiązanie daje powiązanie skrótu danego dokumentu z wszystkimi innymi
+ dokumentami z danej chwili i z poprzednimi poświadczeniami dokumentów.
+ 
+\end_layout
+
+\begin_layout Itemize
+W każdej następnej chwili dołączane są kolejne skróty, dając w ten sposób
+ umiejscowienie skrótu wśród innych tego rodzaju „odcisków palca”.
+ 
+\end_layout
+
+\begin_layout Itemize
+Zwrotnie użytkownik otrzymuje poświadczenie zarejestrowania skrótu i certyfikat
+ dokumentu (Serwer nie może ich zmieniać) skróty są gromadzone w centralnym
+ rejestrze i publikowane za pomocą różnych środków.
+ 
+\end_layout
+
+\begin_layout Subsection
+Elementy
+\end_layout
+
+\begin_layout Enumerate
+dokument i jego skrót
+\end_layout
+
+\begin_layout Enumerate
+serwer obliczający root hash (hash hashy dokumentów z danej sekundy) i SHV
+ (Super Hash Value - root hash i SHV z poprzedniej sekundy)
+\end_layout
+
+\begin_layout Enumerate
+certyfikat dokumentu - potwierdza zarejestrowanie skrótu dokumentu w systemie
+\end_layout
+
+\begin_layout Enumerate
+publikacja SHV za pomocą różnych środków
+\end_layout
+
+\begin_layout Subsection
+Elementy
+\end_layout
+
+\begin_layout Enumerate
+Powiązanie z innymi dokumentami
+\end_layout
+
+\begin_layout Enumerate
+Umiejscowienie w czasie
+\end_layout
+
+\begin_layout Enumerate
+Powiązany z całą historią skrótów
+\end_layout
+
+\begin_layout Enumerate
+Masowa publikacja
+\end_layout
+
+\begin_layout Subsection
+Uzasadnienie
+\end_layout
+
+\begin_layout Standard
+Zmiana dokumentu wymagała by przeliczenia wszystkich skrótów wystawionych
+ do chwili obecnej oraz zmiany wszystkich opublikowanych wartości SHV po
+ zgłoszeniu oryginalnego dokumentu.
 \end_layout
 
 \end_body
