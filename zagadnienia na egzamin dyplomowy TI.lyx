@@ -3299,7 +3299,7 @@ Realizacja podpisu Alice:
 \begin_deeper
 \begin_layout Standard
 S A = E Kp (H(M)); do wysłania dodatkowo można go zaszyfrować razem z wiadomości
-ą  ( Kp to klucz prywatny Alice); ale na ogół wysyłamy: M, SA
+ą ( Kp to klucz prywatny Alice); ale na ogół wysyłamy: M, SA
 \end_layout
 
 \end_deeper
