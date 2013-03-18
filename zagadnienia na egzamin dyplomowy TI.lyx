@@ -229,7 +229,7 @@ continue
 Scharakteryzować paradygmat programowania obiektowego
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Abstrakcja
 \end_layout
 
@@ -242,7 +242,7 @@ Każdy obiekt w systemie służy jako model abstrakcyjnego "wykonawcy", który
  się dzieje, konieczne są rozmaite techniki rozszerzania abstrakcji.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Hermetyzacja
 \end_layout
 
@@ -262,7 +262,7 @@ go wyłączenia mechanizmu enkapsulacji; otwiera to dostęp do wszystkich pól
  tworzenia kodu i znajdowaniem błędów.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Polimorfizm
 \end_layout
 
@@ -277,7 +277,7 @@ Referencje i kolekcje obiektów mogą dotyczyć obiektów różnego typu, a wywo
  w C++.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Dziedziczenie
 \end_layout
 
@@ -357,7 +357,7 @@ Algorytm – w matematyce oraz informatyce to skończony, uporządkowany ciąg
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Cechy algorytmów
 \end_layout
 
@@ -377,7 +377,7 @@ skończoność --- wykonuje się w skończonej ilości kroków,
 sprawność --- czasowa; szybkość działania i pamięciowa; "zasobożerność"
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Złożoność obliczeniowa
 \end_layout
 
@@ -530,7 +530,7 @@ złożoność
 Scharakteryzować język programowania i podać wybrane klasyfikacje języków
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Język programowania
 \end_layout
 
@@ -542,7 +542,7 @@ Podobnie jak języki naturalne, język programowania składa się ze zbiorów
  zadań, jakie komputer ma wykonać.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Klasyfikacja pod względem wykorzystanych paradygmatów
 \end_layout
 
@@ -666,19 +666,19 @@ Java wymaga stosowania JNI do dostępu do natywnych bibliotek
 Scharakteryzować wybrane środowisko programistyczne języka C++
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Borland
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Eclipse
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Visual Studio
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 DEV C++
 \end_layout
 
@@ -737,7 +737,7 @@ Tylko nie wiem co tu opowiadać :/
 Omówić dwa wybrane algorytmy sortowania
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Sortowanie przez scalanie
 \end_layout
 
@@ -762,7 +762,7 @@ Połącz posortowane podciągi w jeden.
 Dobra implementacja w C jest tylko 20% wolniejsza od quicksort.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Sortowanie bąbelkowe
 \end_layout
 
@@ -890,7 +890,7 @@ W tym wypadku warunki ewaluowane są po kolei do momentu, gdy któryś z nich
 Scharakteryzować wybrany język skryptowy
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Ruby
 \end_layout
 
@@ -908,7 +908,7 @@ orów systemów uniksowych, które miało zastąpić język Perl.
  Ruby on Rails (RoR) Ruby ogromnie zyskał na popularności.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Cechy szczególne języka Ruby
 \end_layout
 
@@ -917,7 +917,7 @@ Oto kilka charakterystycznych cech języka Ruby, dzięki którym jest on wygodny
  i potężnym narzędziem:
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Bloki i lambdy
 \end_layout
 
@@ -948,7 +948,7 @@ http://en.wikipedia.org/wiki/Domain-specific_language
  
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 "Duck typing"
 \end_layout
 
@@ -979,7 +979,7 @@ Wadą takiego rozwiązania jest to, że kompilator nie prowadzi programisty
  kod.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Automatyczne odśmiecanie pamięci
 \end_layout
 
@@ -1002,7 +1002,7 @@ http://en.wikipedia.org/wiki/Garbage_collection_(computer_science)
  takie jak Mark-and-Seweep.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Wszystko jest obiektem
 \end_layout
 
@@ -1016,7 +1016,7 @@ Ruby jest językiem w pełni obiektowym.
  obiektów odnoszą się również do całego języka.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Wszystkie wyrażenia zwracają wartość
 \end_layout
 
@@ -1026,7 +1026,7 @@ W Ruby każde wyrażenie --- nawet takie jak wyrażenia warunkowe --- zwraca
  W wyniku czego programy napisane w Ruby są bardziej ekspresyjne i treściwe.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Prawda w Ruby
 \end_layout
 
@@ -1048,7 +1048,7 @@ false
  i bardzo intuicyjne.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Wyrażenia logiczne zapożyczone z języka Lisp
 \end_layout
 
@@ -1067,7 +1067,7 @@ and
  warunkowe.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Mixin-y
 \end_layout
 
@@ -1085,7 +1085,7 @@ mixin
  Umożliwia to rozszerzanie dowolnych klas i obiektów o zestaw nowych zachowań.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 
 \lang american
 Meta programing
@@ -1118,7 +1118,7 @@ convention over configuration
 \end_layout
 
 \begin_layout Section
-Omówić system stron WWW
+[TODO] Omówić system stron WWW
 \end_layout
 
 \begin_layout Section
@@ -1259,7 +1259,7 @@ Eksploatacja
 Wycofanie
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Model kaskadowy
 \end_layout
 
@@ -1299,7 +1299,7 @@ Eksploatacja
 Dezaktualizacja
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Model Fry’ego
 \end_layout
 
@@ -1343,7 +1343,7 @@ Modyfikacja i adaptacja.
 \end_layout
 
 \end_deeper
-\begin_layout Section*
+\begin_layout Subsection*
 Model z prototypem
 \end_layout
 
@@ -1397,7 +1397,7 @@ Tymczasowy --- prototyp odrzucony; stworzony na potrzeby zrozumienie potrzeb
 Rozwojowy --- prototyp przekształcany w ostatecznie funkcjonujący system.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Model spiralny
 \end_layout
 
@@ -1457,7 +1457,7 @@ Wyjaśnij pojęcia: baza danych, system zarządzania bazami danych oraz integral
 ć danych.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Baza danych
 \begin_inset Foot
 status open
@@ -1478,7 +1478,7 @@ Zbiór danych zapisanych zgodnie z określonymi regułami.
  i przetwarzania tych danych.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 System zarządzania bazą danych
 \begin_inset Foot
 status open
@@ -1501,7 +1501,7 @@ System zarządzania bazą danych, SZBD (ang.
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Integralność danych
 \begin_inset Foot
 status open
@@ -2024,7 +2024,7 @@ Postać normalna – postać relacji w bazie danych, w której nie występuje
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Pierwsza postać normalna (1NF)
 \end_layout
 
@@ -2067,7 +2067,7 @@ Jest zdefiniowany klucz relacji.
 Wszystkie atrybuty niekluczowe są w zależności funkcyjnej od klucza.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Druga postać normalna (2NF)
 \end_layout
 
@@ -2079,7 +2079,7 @@ Relacja jest w drugiej postaci normalnej wtedy i tylko wtedy, gdy jest w
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Trzecia postać normalna (3NF)
 \end_layout
 
@@ -2089,7 +2089,7 @@ Mamy z nią do czynienia wtedy i tylko wtedy, gdy tabela jest w 2NF oraz
  bezpośrednio.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Postać normalna Boyce'a-Codda (BCNF lub 3.5NF)
 \end_layout
 
@@ -2099,7 +2099,7 @@ W tej postaci zależności funkcyjne muszą mieć następującą postać: jeżel
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Czwarta postać normalna (4NF)
 \end_layout
 
@@ -2170,7 +2170,7 @@ Scharakteryzować wielowarstwowy model sieci komputerowej
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename model_osi_tcpip.tiff
+	filename /tmp/kde-adrianp/kontactsh3569.index.1.1/model_osi_tcpip.tiff
 	lyxscale 50
 	scale 50
 	groupId diagram
@@ -2180,7 +2180,7 @@ Scharakteryzować wielowarstwowy model sieci komputerowej
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Model TCP/IP
 \begin_inset Foot
 status open
@@ -2216,7 +2216,7 @@ Podstawowym założeniem modelu TCP/IP jest podział całego zagadnienia komunik
  
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Warstwa aplikacji
 \end_layout
 
@@ -2232,7 +2232,7 @@ Warstwa procesowa czy warstwa aplikacji (ang.
  
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Warstwa transportowa
 \end_layout
 
@@ -2249,7 +2249,7 @@ Warstwa transportowa (ang.
  
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Warstwa Internetu
 \end_layout
 
@@ -2265,7 +2265,7 @@ Warstwa Internetu lub warstwa protokołu internetowego (ang.
  
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Warstwa dostępu do sieci
 \end_layout
 
@@ -2279,7 +2279,7 @@ m danych przez fizyczne połączenia między urządzeniami sieciowymi.
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Model OSI
 \begin_inset Foot
 status open
@@ -2311,7 +2311,7 @@ Model ISO OSI RM jest traktowany jako model odniesienia (wzorzec) dla większoś
  
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Warstwa 7: aplikacji
 \end_layout
 
@@ -2327,7 +2327,7 @@ Warstwa aplikacji jest warstwą najwyższą, zajmuje się specyfikacją interfej
  
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Warstwa 6: prezentacji
 \end_layout
 
@@ -2349,7 +2349,7 @@ h danych na zgodny z wewnętrzną reprezentacją systemu docelowego.
  
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Warstwa 5: sesji
 \end_layout
 
@@ -2363,7 +2363,7 @@ o zsynchronizowane.
  
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Warstwa 4: transportowa
 \end_layout
 
@@ -2380,7 +2380,7 @@ Warstwa transportowa segmentuje dane oraz składa je w tzw.
  User Datagram Protocol).
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Warstwa 3: sieciowa
 \end_layout
 
@@ -2409,7 +2409,7 @@ ych dla warstw niższych (kapsułkowanie).
  
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsubsection*
 Warstwa 2: łącza danych
 \end_layout
 
@@ -2489,7 +2489,7 @@ sieć satelitarna (Satellite Network) sieć, w której sygnały przekazywane
 Omówić podstawowe narzędzia administratora sieci komputerowej
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 ping
 \begin_inset Foot
 status open
@@ -2513,7 +2513,7 @@ ping — nazwa programu używanego w sieciach komputerowych TCP/IP (takich
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 traceroute
 \begin_inset Foot
 status open
@@ -2537,7 +2537,7 @@ traceroute - program służący do badania trasy pakietów w sieci IP.
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 route
 \begin_inset Foot
 status open
@@ -2557,7 +2557,7 @@ route – program narzędziowy w systemach uniksowych oraz Windows, który wyśw
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 ip
 \begin_inset Foot
 status open
@@ -2582,7 +2582,7 @@ ip - polecenie do konfiguracji interfejsów sieciowych, tablic tras czy tuneli
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 iptables
 \begin_inset Foot
 status open
@@ -2643,7 +2643,7 @@ Wyjaśnij terminy: identyfikacja, uwierzytelnienie, autoryzacja, spójność
  danych, ślad kontroli
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Identyfikacja
 \begin_inset Foot
 status open
@@ -2661,7 +2661,7 @@ http://pl.wikipedia.org/wiki/Uwierzytelnianie
 Podmiot deklaruje swoją tożsamość.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Uwierzytelnianie
 \end_layout
 
@@ -2670,7 +2670,7 @@ Strona ufająca stosuje odpowiednią technikę uwierzytelniania (authentication
  mechanism) w celu weryfikacji zadeklarowanej wcześniej tożsamości.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Autoryzacja
 \begin_inset Foot
 status open
@@ -2700,7 +2700,7 @@ Celem autoryzacji jest kontrola dostępu (access control), która potwierdza,
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Integralność danych
 \begin_inset Foot
 status open
@@ -2741,7 +2741,7 @@ W bezpieczeństwie teleinformatycznym ochrona integralności zapobiega celowej
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Ślad kontroli
 \end_layout
 
@@ -2926,6 +2926,12 @@ Porównanie kryptografii symetrycznej i asymetrycznej
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float table
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="3">
 <features tabularvalignment="middle" tabularwidth="90text%">
@@ -3109,6 +3115,11 @@ h), uwierzytelnianie, gotówka cyfrowa, podpisywanie kontraktów i inne protoko�
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -3493,7 +3504,7 @@ sty dla użytkowników.
 Porównać technologie CORBA i JAVA RMI
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Common Object Request Broker Architecture
 \end_layout
 
@@ -3534,7 +3545,7 @@ Adresy IOR mogą dotyczyć także niskopoziomowych protokołów transmisji danyc
  
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Remote Method Invocation
 \end_layout
 
@@ -3586,55 +3597,55 @@ ESjOBQumrjyD-YSwtzguaCcxZswJGRuuFomMYqXJmmXiMRwVS9ekha2zNRZHtldh8t_j1LNF00VdDZAQ
 Sklasyfikować i omówić języki programowania serwisów Internetowych
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 PHP
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Java
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 C#
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Ruby
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Scala
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Lisp
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Perl
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Python
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 ColdFusion
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Visual Basic
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 JavaScript
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 C++
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Clojure
 \end_layout
 
@@ -3680,7 +3691,7 @@ Od wersji 5.3 posiada wsparcie dla programowania funkcyjnego (wyrażenia lambda
 Wymienić i krótko omówić instrukcje sterujące w PHP
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 elseif/else if
 \end_layout
 
@@ -3688,7 +3699,7 @@ elseif/else if
 Wybrany blok kodu jest wykonywany w zależności od wartości wyrażenia logicznego.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 while
 \end_layout
 
@@ -3697,7 +3708,7 @@ Wykonywanie bloku kodu jest powtarzane dopóki wartość wyrażenie logicznego
  jest prawdą.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 do-while
 \end_layout
 
@@ -3711,7 +3722,7 @@ while
  iteracji.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 for
 \end_layout
 
@@ -3721,7 +3732,7 @@ Służy do budowania pętli bazujących na zmiennych sterujących o danej warto�
  bloku zmieniającego wartość zmiennych sterujących.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 foreach
 \end_layout
 
@@ -3729,7 +3740,7 @@ foreach
 Ułatwia iteracje po wartościach przechowywanych w tablicach.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 break
 \end_layout
 
@@ -3759,7 +3770,7 @@ switch
  wykonywanie kończy.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 continue
 \end_layout
 
@@ -3780,7 +3791,7 @@ foreach
  i przejścia do wykonania następnej iteracji.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 switch
 \end_layout
 
@@ -3794,7 +3805,7 @@ if
  wartością zmienna się równa.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 declare
 \end_layout
 
@@ -3812,7 +3823,7 @@ tick
  jest pomocna przy profilowaniu kodu.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 return
 \end_layout
 
@@ -3825,7 +3836,7 @@ return
  jest wartością zwracaną przez funkcję której wywołanie kończy.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 require
 \end_layout
 
@@ -3837,7 +3848,7 @@ include
  ale w razie błędu powoduje zakończenie działania skryptu z błędem.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 include
 \end_layout
 
@@ -3845,7 +3856,7 @@ include
 Załącza i wykonuje kod PHP znajdujący się we wskazanym pliku.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 require_once
 \end_layout
 
@@ -3857,7 +3868,7 @@ require
  ale nie wykonywane jest ponownie jeżeli już dany plik został załadowany.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 include_once
 \end_layout
 
@@ -3869,7 +3880,7 @@ include
  ale nie wykonywane jest ponownie jeżeli już dany plik został załadowany.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 goto
 \end_layout
 
@@ -4543,7 +4554,7 @@ http://pl.wikipedia.org/wiki/Java_DataBase_Connectivity
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Java DataBase Connectivity (JDBC)
 \end_layout
 
@@ -4747,7 +4758,7 @@ instead of this one that you may want just logged */ }
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Hibernate
 \begin_inset Foot
 status open
@@ -4914,7 +4925,7 @@ Wdrożenie i pielęgnacja
 Omówić rolę administratora systemu informatycznego
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Administrator
 \begin_inset Foot
 status open
@@ -4955,7 +4966,7 @@ poszczególnych usług typu fora dyskusyjne, czaty itp., gdzie rola administrato
  sprowadza się przede wszystkim do moderowania.
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Zadania
 \end_layout
 
